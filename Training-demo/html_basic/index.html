@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <base href=""> 
+    <!-- <base> các đường dẫn cơ sở nối với các đường dẫn tương đối khác tạo đường dẫn tuyệt đối (nối sau đuôi với all <a></a>) -->
+</head>
+<body>
+    <header>
+    <!-- chứa tiêu đề của trang web hay menu -->
+    <nav>
+        <!-- chứa menu của trang web -->
+        <ul>
+            <li>Home</li>
+            <li>Categori</li>
+            <li>Sale</li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <!-- chứa các phần là nd chính của html, không chứa nhiều ptu main trong 1 file html, ko thể là con của ptu nào -->
+        <div>
+            <!-- thường dùng chứa các ptu khác trong file html -->
+            <p>Theo bản tin sáng ngày 11/8 của Bộ Y tế, đã có tổng hơn 80.000 bệnh nhân Covid-19 được điều trị khỏi, hơn 11 triệu liều vắc xin đã được tiêm. </p>
+            <span>This is inline element</span>
+            <a href="https://www.w3schools.com/" target="blank">Link to</a>
+            <!-- chỉ dùng thẻ a khi link đến 1 đường dẫn nào đó. href là bắt buộc -->
+        </div>
+        <section>
+            <!-- xác định 1 tài liệu, 1 phiên làm việc của file -->
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <!-- id của input luôn luôn giống for để focus vs nhau -->
+                <button type="submit">Submit</button>
+                <!-- <button> có thể wrap thêm nhiều element trong nó, nên dùng để nó có ngữ nghĩa -->
+                <select name="info" id="info">
+                    <option value="">Da Nang</option>
+                    <option value="">Quang Nam</option>
+                    <option value="">Hue</option>
+                    <!-- khi để trống thì tự hiểu value = text trong <option> -->
+                </select>
+                <input type="button" value="Submit">
+            </form>
+        </section>
+        <section>
+            <ul>
+                <li>session 1</li>
+                <li>session 2</li>
+                <li>session 3</li>
+            </ul>
+            <ol>
+                <li>session 1</li>
+                <li>session 2</li>
+                <li>session 3</li> 
+            </ol>
+        </section>
+        <div>
+            <p>Đay là đoạn text <br> màu đỏ</p>
+            <hr>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <td>AT001</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>Phuoc</td>
+            </tr>
+        </table>
+        <aside>
+            <!-- thường là chứa nd tương tự sidebar -->
+            <ul>
+                <li>sidebar1</li>
+                <li>sidebar2</li>
+                <li>sidebar3</li>
+                <li>sidebar4</li>
+            </ul>
+        </aside>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <article>
+            <!-- chứa các blog text đơn giản có tiêu đề và văn bản -->
+        </article>
+    </main>
+</body>
+</html>
