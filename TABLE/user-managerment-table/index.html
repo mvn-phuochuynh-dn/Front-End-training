@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User managerment table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <strong>User</strong> |
+        <span>Manager User and permissions</span>
+        <button class="btnHeader1">Export to Excel</button>
+        <button class="btnHeader2"> create new user</button>
+    </header>
+    <main>
+        <section>
+            <input type="text" name="search" id="txtSearch" class="inpSearch" value="Search...">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actions</th>
+                        <th>User name</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Roles</th>
+                        <th>Email Address</th>
+                        <th>Email confirm</th>
+                        <th>Ative</th>
+                        <th>Last login time</th>
+                        <th>Creation time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin@acme.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>amin.maalouf</td>
+                        <td>Amin</td>
+                        <td>Maalouf</td>
+                        <td>User</td>
+                        <td>amin.maalouf@yahoo.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>andrew.andrewus</td>
+                        <td>andrew</td>
+                        <td>andrewus</td>
+                        <td>User</td>
+                        <td>andrew.andrewus@outlook.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>audrey.naulin</td>
+                        <td>Audrey</td>
+                        <td>Naulin</td>
+                        <td>User</td>
+                        <td>audrey.naulin@live.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>biff.tannen</td>
+                        <td>Biff</td>
+                        <td>Tannen</td>
+                        <td>User</td>
+                        <td>biff.tannen@hotmail.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>christophe.grange</td>
+                        <td>Christophe</td>
+                        <td>Grange</td>
+                        <td>User</td>
+                        <td>christophe.grange@aspnetzero.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>christophe.nolan</td>
+                        <td>Christophe</td>
+                        <td>Nolan</td>
+                        <td>User</td>
+                        <td>christophe.nolan@aspnetzero.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>clarice.starling</td>
+                        <td>Clarice</td>
+                        <td>Starling</td>
+                        <td>User</td>
+                        <td>clarice.starling@live.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>david.wells</td>
+                        <td>David</td>
+                        <td>Wells</td>
+                        <td>User</td>
+                        <td>david.wells@yahoo.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>forrest.gump</td>
+                        <td>Forrest</td>
+                        <td>Gump</td>
+                        <td>User</td>
+                        <td>forrest.gump@hotmail.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select name="act" id="selAct">
+                                <option value="delete">Delete</option>
+                                <option value="edit">Edit</option>
+                            </select>
+                        </td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>admin@acme.com</td>
+                        <td>
+                            <select name="eConf" id="selEConf">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="act" id="act">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="date" name="lastLogin" id="inpLastLogin">
+                        </td>
+                        <td>
+                            <input type="date" name="creTime" id="inpCreTime">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <label for="">Show</label>
+            <input type="number" name="show" id="inpShow"value="10" max="10" min="1" class="inpShow">
+            <label for="">entries</label>
+        </section>
+    </main>
+</body>
+
+</html>

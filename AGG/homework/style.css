@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    background-color: rgb(154, 174, 212);
+    color: darkblue;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+.videoHeader{
+    width: 50%;
+    height: auto;
+}
+main{
+    width: 100%;
+    background-color: rgb(230, 228, 228);
+}
+h2{
+    color: blue;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+h3{
+    color: rgb(226, 115, 24);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p{
+    width: 80%;
+    padding-left: 30px;
+}
+section{
+    margin-left: 15%;
+}
+img{
+    width: auto;
+    height: 300px;
+}
+.div_list{
+   margin-left: 30px;
+   padding-bottom: 10px;
+}
+aside{
+    width: 100%;
+    background-color: rgb(235, 248, 222);
+    padding: 30px;
+}
+.dangKyTour{
+    padding-left: 30px;
+}
+.DSTour{
+    padding-left: 50px;
+
+}
+footer{
+    width: 100%;
+}
+.div_lienHe{
+    padding: 10px;
+    padding-left: 300px;
+    background-color: black;
+    color: white;
+
+}
+.cty{
+    padding-bottom: 20px;
+    width: 80%;
+}
+.dv_banQuyen{
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(115, 128, 129);
+    text-align: center;
+}

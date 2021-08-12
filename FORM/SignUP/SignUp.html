@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <h1>Sign Up</h1>
+            <div class="title">
+                <h2>1</h2>
+                <h3>Basic Info</h3>
+            </div>
+            <label for="inpName">Name:</label>
+            <input type="text" name="name" id="inpName" placeholder="Input your name here"
+                class="inp_name_email_password">
+            <label for="inpName">Birthday:</label>
+            <input type="date" name="birthday" id="inpBirthday"
+                class="inp_name_email_password">
+            <label for="inpEmail">Email:</label>
+            <input type="email" name="email" id="inpEmail" placeholder="Input your email"
+                class="inp_name_email_password">
+            <label for="inpPass">Password:</label>
+            <input type="password" name="password" id="inpPass" placeholder="Input your password"
+                class="inp_name_email_password">
+            <label for="inpConfPass">Confirm Password:</label>
+            <input type="password" name="confPass" id="inpConfPass" placeholder="Input your password"
+                class="inp_name_email_password">
+            <label>Age:</label>
+            <div class="age">
+                <input type="radio" name="age" id="btnAge1" value="under13" checked>Under 13<br>
+                <input type="radio" name="age" id="btnAge2" value="age13">13 or older<br>
+            </div>
+
+            <div class="title">
+                <h2>2</h2>
+                <h3> Profile</h3>
+            </div>
+            <label for="txtAreaBiogr">Biography:</label>
+            <textarea name="biography" id="txtAreaBiogr" cols="30" rows="10"></textarea>
+            <label>Job Role:</label>
+            <select name="jobRole" id="selectJobRole" aria-placeholder="Front End Developer">
+                <optgroup label="Web">
+                    <option value="Front_End_Developer">Front End Developer</option>
+                    <option value="PHP_Developer">PHP Developer</option>
+                    <option value="Python_Developer">Python Developer</option>
+                    <option value="Rails_Developer">Rails Developer</option>
+                    <option value="Web_Designer">Web Designer</option>
+                    <option value="WordPress_Developer">WordPress Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="Android_Developer">Android Developer</option>
+                    <option value="IOS_Developer">IOS Developer</option>
+                    <option value="Mobile_Developer">Mobile Developer</option>
+                </optgroup>
+                <optgroup label="Bussiness">
+                    <option value="Business_Owner">Business Owner</option>
+                    <option value="Freelancer">Freelancer</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="Secretary">Secretary</option>
+                    <option value="Manternance">Manternance</option>
+                </optgroup>
+            </select>
+            <label> Interests: </label>
+            <div class="cbInterests">
+                <input type="checkbox" name="interests" id="inpDevelopment" value="Development">Development<br>
+                <input type="checkbox" name="interests" id="inpDesign" value="Design">Design<br>
+                <input type="checkbox" name="interests" id="inpBusiness" value="Business">Business<br>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+</body>
+
+</html>
