@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-main{
+    width: 100%;
+    color: aquamarine;
+}
+.setion-attribute-selector{
+    padding: 10px;
+    background-color: rgb(102, 215, 219);
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-submit{
+    width: 80%;
+    height: auto;
+    background-color: rgb(156, 175, 124);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}
+.form-title{
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+
+}
+.lb-name{
+    display: inline-block;
+    width: 150px;
+    color: rgb(45, 0, 128);
+    font-size: 16px;
+    margin-left: 200px;
+}
+input[type="text"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+input[type="date"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+input[type="email"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+input[type="password"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+button[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(145, 241, 48);
+    color: black;
+}
