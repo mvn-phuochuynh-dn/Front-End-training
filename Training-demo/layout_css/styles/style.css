@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  background-color: white;
+}
+img {
+  max-width: 100%;
+}
+a img {
+  vertical-align: top;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  border: none;
+  background: none;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  margin: 0 -15px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-3,
+.col-4,
+.col-6 {
+  float: left;
+  padding: 0 15px;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.333333333%;
+}
+.col-6 {
+  width: 50%;
+}
+
+/* Header */
+.header-top {
+  background-color: aliceblue;
+}
+.header-logo {
+  line-height: 80px;
+}
+.header-logo img {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+.header-actions {
+  float: right;
+  line-height: 80px;
+}
+.header-actions li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-actions li:first-child{
+  margin-left: 0;
+}
+.header-actions li i {
+  font-size: 18px;
+}
+.header-nav {
+  background-color: #173346;
+}
+.header-menu {
+  display: inline-block;
+}
+.header-menu li {
+  line-height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 15px;
+}
+.header-menu li:first-child {
+  padding-left: 0;
+}
+.header-menu li {
+  color: white;
+}
+.header-menu li:hover {
+  color: #6bb039;
+}
+.socials {
+  float: right;
+  line-height: 50px;
+}
+.socials li {
+  display: inline-block;
+  margin-left: 20px;
+  width: 28px;
+  height: 28px;
+  background: #6bb039;
+  text-align: center;
+  border-radius: 50%;
+}
+.socials li a {
+  line-height: 28px;
+  display: block;
+}
+.socials li:first-child {
+  margin-left: 0;
+}
+.socials li i {
+  color: white;
+}
+.socials li i:hover {
+  color: #173346;
+}
+
+/* Main */
+.section-carousels {
+  position: relative;
+}
+.carousel-list .carousel-item img {
+  width: 100%;
+}
+.section-carousels .carousel-btn-action {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%
+}
+.carousel-btn-action i {
+  font-size: 30px;
+  color: aliceblue;
+}
+.carousel-btn-action .btn {
+  position: absolute;
+}
+.carousel-btn-action .btn-pre {
+  left: 30px;
+}
+.carousel-btn-action .btn-next {
+  right: 30px;
+}
+.carousel-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-pagination li {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+.section-product {
+  margin-top: 40px
+}
+.section-tile {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.product-item .product-info {
+  margin-top: 10px;
+}
+.product-item .product-info .product-title{
+  font-size: 18px;
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: 600;
+}
+.product-item .product-info .product-price {
+  font-size: 14px;
+  float: right;
+  font-weight: 600;
+}
+.btn-primary {
+  width: 100%;
+  display: block;
+  background: #173346;
+  color: white;
+  text-align: center;
+  padding: 6px 6px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.btn-primary:hover {
+  color: #6bb039;
+}
+.section-banner {
+  margin-top: 40px;
+  padding: 60px 0;
+  background-color: #b8bdbd;
+  text-align: center;
+}
+.section-banner .banner-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.section-partner {
+  margin-top: 60px;
+}
+.section-partner .partner-item {
+  width: 20%;
+  float: left;
+  padding: 0 15px;
+  height: 100px;
+}
+.section-partner .partner-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Foorter */
+.page-footer {
+  margin-top: 50px;
+}
+.footer-top {
+  background-color: black;
+  padding: 10px 0;
+}
+.form-newsletter {
+  position: relative;
+  display: inline-block;
+}
+.form-newsletter label {
+  color: white;
+}
+.form-newsletter input {
+  outline: none;
+  width: 200px;
+  padding: 5px 25px 5px 6px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 10px;
+}
+.form-newsletter .btn-submit {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+}
+.footer-top .socials {
+  color: white;
+  line-height: 30px;
+}
+.footer-top .socials li:first-child {
+  display: contents;
+}
+.footer-middle-col {
+  margin-top: 30px;
+}
+.link-list li {
+  padding: 5px 0
+}
+.footer-link-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer-middle-col .link-list li:hover {
+  color: #6bb039;
+}
+.footer-bottom {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #333;
+}
+.footer-bottom p {
+  font-size: 16px;
+  color: white;
+}
