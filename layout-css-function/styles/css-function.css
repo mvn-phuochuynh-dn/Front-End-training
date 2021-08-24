@@ -1,0 +1,27 @@
+/* attr() */
+.product-iterm a::after {
+    content: attr("( "href" )");
+}
+/* counter */
+.category-list {
+    counter-reset: section;
+}
+.category-list li::before {
+    counter-increment: section;
+    content: counter(section) ": ";
+}
+/* cubic-bezier */
+.product-tab-menu li a:hover {
+    color: black;
+    border-bottom: 2px solid #ff8400;
+    padding-bottom: 5px;
+    transition: 2s cubic-bezier(.1, .7, 1.0, .1);
+}
+/* linear-gradient */
+body {
+    background-image: linear-gradient(rgb(219, 194, 194), rgb(212, 189, 189), rgb(213, 213, 224));
+}
+/* radial-gradient */
+.service-iterm {
+    background-image: radial-gradient(rgb(245, 194, 137), rgb(161, 219, 161), rgb(142, 142, 211))
+}
