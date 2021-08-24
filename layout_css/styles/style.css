@@ -105,13 +105,32 @@ a img {
 }
 .section-sub-title {
     font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 .section-title {
-    font-size: 80px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
     margin: 20px 0;
+    text-transform: uppercase;
 }
 .block-title {
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: 700px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.block-title-top {
+    text-align: center;
+    margin-top: 100px;
+}
+.banner-sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 .color-white {
     color: white;
@@ -180,7 +199,7 @@ a img {
 }
 .header-menu li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
     font-weight: 800;
 }
 .header-menu li:first-child {
@@ -200,7 +219,7 @@ a img {
 }
 .header-social-list li {
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .header-social-list li:first-child {
     padding-left: 0;
@@ -214,15 +233,16 @@ a img {
     color: #ff8400;
 }
 /* page-main */
+/* section-carousel */
 .section-carousels {
     position: relative;
 }
-.carousel-list .carousel-item img {
+.carousel-img img {
     width: 100%;
 }
 .adv-banner-content {
     position: absolute;
-    max-width: calc(100% - 270px);
+    max-width: calc(100% - 135px);
     left: 135px;
     top: 50%;
     transform: translateY(-50%);
@@ -241,6 +261,7 @@ a img {
     margin: 0 10px;
     border-radius: 50%;
 }
+/* section-clothe-type */
 .section-clothe-types {
     margin: 30px 0;
 }
@@ -260,14 +281,20 @@ a img {
     color: white;
     text-transform: uppercase;
 }
+/* section-product */
+.section-products {
+    margin: 70px 0;
+}
 .product-tab-list {
     text-align: center;
-    margin: 10px 0;
-    padding-bottom: 20px;
+    margin: 20px 0;
 }
 .product-tab-menu li {
     display: inline-block;
     padding-left: 20px;
+}
+.product-tab-menu li a {
+    color: #878787;;
 }
 .product-tab-menu li:first-child a {
     border-bottom: 2px solid #ff8400;
@@ -280,11 +307,11 @@ a img {
     padding-bottom: 5px;
 }
 .product-list {
-    padding-top: 30px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
-.product-iterm{
-    max-height: 500px;
+.product-iterm {
+    max-height: 400px;
+    margin: 20px 0;
 }
 .product-sale {
     position: relative;
@@ -326,7 +353,7 @@ a img {
     color: red;
 }
 .product-color {
-    height: 100px;
+    height: 50px;
     padding: 10px 0;
 }
 .product-color li {
@@ -342,9 +369,11 @@ a img {
     height: 22px;
     border: 2px solid black;
 }
+/* section-sales off */
 .section-sales-off {
     width: 100%;
     position: relative;
+    margin: 20px 0;
 }
 .img-full-width {
     width: 100%;
@@ -360,13 +389,7 @@ a img {
 .sales-off-content .block-title {
     margin-bottom: 20px;
 }
-.section-top-selling {
-    width: 100%;
-}
-.block-title-top {
-    text-align: center;
-    margin-top: 100px;
-}
+/* section-top-selling */
 .block-title-top .section-title {
     font-size: 30px;
     color: black;
@@ -382,11 +405,10 @@ a img {
 }
 hr {
     color: #d4d3d3;
-    margin: 0 30px;
+    width: 70%;
+    margin: 70px auto;
 }
-.block-title-top {
-    text-align: center;
-}
+
 .latest-news-list {
     margin: 30px 0;
 }
@@ -399,6 +421,7 @@ hr {
 .latest-news-content .section-sub-title {
     font-size: 18px;
     color: #222222;
+    text-transform: inherit;
 }
 .latest-news-content .section-sub-title:hover {
     color: #ff8400;
