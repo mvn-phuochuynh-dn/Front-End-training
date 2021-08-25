@@ -1,3 +1,4 @@
+@import url('reset.css');
 * {
     box-sizing: border-box;
 }
@@ -292,19 +293,21 @@ a img {
     text-align: center;
     margin: 20px 0;
 }
-.product-tab-menu li {
+.product-tab-menu .tab-iterm {
     display: inline-block;
-    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #222;
 }
-.product-tab-menu li a {
+.product-tab-menu li {
     color: #878787;;
 }
-.product-tab-menu li:first-child a {
+.product-tab-menu li:first-child {
     border-bottom: 2px solid #ff8400;
     padding-bottom: 5px;
     color: black;
 }
-.product-tab-menu li a:hover {
+.product-tab-menu li:hover {
     color: black;
     border-bottom: 2px solid #ff8400;
     padding-bottom: 5px;
@@ -425,7 +428,8 @@ hr {
     margin-top: 20px;
 }
 .latest-news-content .section-sub-title {
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     color: #222222;
     text-transform: inherit;
 }
