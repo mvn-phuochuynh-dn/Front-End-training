@@ -7,43 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalle's home layout</title>
     <script src="https://kit.fontawesome.com/c644953976.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
 
 <body>
-    <a class="header-banner">
-        <div href="#" class="header-banner-content">
-            <span>Today deal sale off </span>
-            <b>70%</b>.End in
-            <b>126 days 13:18:00</b>
-            <span>.Hurry up</span>
-            <i class="fas fa-arrow-right"></i>
-        </div>
-        <button>close</button>
-    </a>
-    <header class="page-header">
-        <a href="#" class="logo-page-black col-2">
-            <img src="/img/logo-page-black.svg" alt="logo Kalle's black">
+    <div class="header-banner">
+        <a href="#" class="header-banner-content">
+            <div href="#" class="header-banner-content-middle">
+                <span>Today deal sale off </span>
+                <b>70%</b>.End in
+                <b>126 days 13:18:00</b>
+                <span>.Hurry up</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <button>close</button>
         </a>
-        <nav class="header-nav col-8">
+    </div>
+    <header class="page-header">
+        <a href="#" class="logo-page-black">
+            <img src="./img/logo-page-black.svg" alt="logo Kalle's black">
+        </a>
+        <nav class="header-nav">
             <ul class="header-menu">
-                <li><a href="#">DEMO</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">SALE</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">LOOKBOOK</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li class="header-item"><a href="#">DEMO</a></li>
+                <li class="header-item"><a href="#">SHOP</a></li>
+                <li class="header-item"><a href="#">PRODUCT</a></li>
+                <li class="header-item"><a href="#">SALE</a></li>
+                <li class="header-item"><a href="#">PORTFOLIO</a></li>
+                <li class="header-item"><a href="#">LOOKBOOK</a></li>
+                <li class="header-item"><a href="#">BLOG</a></li>
             </ul>
         </nav>
-        <div class="header-social col-2">
+        <div class="header-social">
             <ul class="header-social-list">
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-                <li><a href=""><i class="fas fa-user"></i></a></li>
-                <li><a href=""><i class="fas fa-heart"></i></a></li>
-                <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-search"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-user"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-heart"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </div>
     </header>
@@ -99,29 +99,35 @@
 
         <section class="section-clothe-types">
             <div class="container">
-                <ul class="clothe-type-list row">
-                    <li class="clothe-type-item col-4">
-                        <a href="" class="img-type">
-                            <img src="./img/accessories-for-man.jpg" alt="accessories-for-man">
-                        </a>
+                <ul class="clothe-type-list">
+                    <li class="clothe-type-item">
+                        <div class="clothe-type-img">
+                            <a href="" class="img-type">
+                                <img src="./img/accessories-for-man.jpg" alt="accessories-for-man">
+                            </a>
+                        </div>
                         <div class="type-content">
                             <h4 class="banner-sub-title">ACCESSORIES</h4>
                             <h3 class="block-title">FOR MEN</h3>
                         </div>
                     </li>
-                    <li class="clothe-type-item col-4">
-                        <a href="" class="img-type">
-                            <img src="./img/training-clothing-for-women.jpg" alt="training-clothing-for-women">
-                        </a>
+                    <li class="clothe-type-item">
+                        <div class="clothe-type-img">
+                            <a href="" class="img-type">
+                                <img src="./img/training-clothing-for-women.jpg" alt="training-clothing-for-women">
+                            </a>
+                        </div>
                         <div class="type-content">
                             <h4 class="banner-sub-title">TRAINING CLOTHING</h4>
                             <h3 class="block-title">FOR WOMEN</h3>
                         </div>
                     </li>
-                    <li class="clothe-type-item col-4">
-                        <a href="" class="img-type">
-                            <img src="./img/summer-sale.jpg" alt="summer-sale">
-                        </a>
+                    <li class="clothe-type-item">
+                        <div class="clothe-type-img">
+                            <a href="" class="img-type">
+                                <img src="./img/summer-sale.jpg" alt="summer-sale">
+                            </a>
+                        </div>
                         <div class="type-content">
                             <h2 class="section-title">-50% OFF</h2>
                             <h4 class="banner-sub-title">SUMMER SALE</h4>
@@ -136,22 +142,16 @@
             <div class="container">
                 <div class="product-tab-list">
                     <ul class="product-tab-menu">
-                        <li class="tab-iterm">
-                            <h4 class="section-sub-title"><a href="">FEATURED</a></h4>
-                        </li>
-                        <li class="tab-iterm">
-                            <h4 class="section-sub-title"><a href="">NEW ARRIVALS</a></h4>
-                        </li>
-                        <li class="tab-iterm">
-                            <h4 class="section-sub-title"><a href="">ON SALE</a></h4>
-                        </li>
+                        <li class="tab-item">FEATURED</li>
+                        <li class="tab-item">NEW ARRIVALS</li>
+                        <li class="tab-item">ON SALE</li>
                     </ul>
                 </div>
-                <ul class="product-list row">
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                <ul class="product-list">
+                    <li class="product-item">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-04.jpg" alt="product-iterm">
+                                <img src="./img/pr-04.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -164,10 +164,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3 product-sale">
-                        <div class="product-iterm-img">
-                            <a href="#" class="product-iterm-img">
-                                <img src="./img/pr-08.jpg" alt="product-iterm">
+                    <li class="product-item">
+                        <div class="product-item-img">
+                            <a href="#" class="product-item-img">
+                                <img src="./img/pr-08.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="top-right btn-sale">35%</div>
@@ -179,10 +179,10 @@
                             </p>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
-                            <a href="#" class="product-iterm-img">
-                                <img src="./img/pr-10.jpg" alt="product-iterm">
+                    <li class="product-item">
+                        <div class="product-item-img">
+                            <a href="#" class="product-item-img">
+                                <img src="./img/pr-10.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -194,10 +194,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
-                            <a href="#" class="product-iterm-img">
-                                <img src="./img/pr-13.jpg" alt="product-iterm">
+                    <li class="product-item">
+                        <div class="product-item-img">
+                            <a href="#" class="product-item-img">
+                                <img src="./img/pr-13.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -215,11 +215,11 @@
 
 
         <section class="section-sales-off">
-            <a href="#" class="img-full-width">
+            <div class="sales-off-img">
                 <img src="./img/img-sales-off.jpg" alt="img-sales-off">
-            </a>
+            </div>
             <div class="sales-off-content">
-                <h4 class="sub-title">BLACK FRIDAY</h4>
+                <p class="sub-title">BLACK FRIDAY</p>
                 <h2 class="section-title">SAVE 50% OFF</h2>
                 <h3 class="block-title">FIRST ONLINE PURCHASE</h3>
                 <a href="#" class="btn-primary btn-black">VIEW PROMOTION</a>
@@ -232,14 +232,14 @@
                     <h2 class="section-title">TOP SELLING</h2>
                     <i class="fas fa-dumbbell"></i>
                     <p>Whether your goals are to improve weight or body composition, increase strength and function, or
-                        improve overall<br>
-                        health, resistance training can help you get there.</p>
+                        improve overall</p>
+                    <p>health, resistance training can help you get there.</p>
                 </div>
                 <ul class="product-list row">
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-01.jpg" alt="product-iterm">
+                                <img src="./img/pr-01.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -251,10 +251,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-03.jpg" alt="product-iterm">
+                                <img src="./img/pr-03.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -262,10 +262,10 @@
                             <p class="product-price">$65.00</p>
                         </div>
                     </li>
-                    <li class="product-iterm col-3 product-sale">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3 product-sale">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-04.jpg" alt="product-iterm">
+                                <img src="./img/pr-04.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="top-right btn-sale">35%</div>
@@ -282,10 +282,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-07.jpg" alt="product-iterm">
+                                <img src="./img/pr-07.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -297,26 +297,25 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-09.jpg" alt="product-iterm">
+                                <img src="./img/pr-09.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
                             <h3 class="product-name"><a href="">Men's Sports Jogging Workout Shorts</a></h3>
-                            <p class="product-price">$29.00
-                            </p>
+                            <p class="product-price">$29.00</p>
                             <ul class="product-color">
                                 <li class="product-color-black"></li>
                                 <li class="product-color-blue"></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3 product-sale">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3 product-sale">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-11.jpg" alt="product-iterm">
+                                <img src="./img/pr-11.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="top-right btn-sale">35%</div>
@@ -333,10 +332,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-14.jpg" alt="product-iterm">
+                                <img src="./img/pr-14.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -348,10 +347,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="product-iterm col-3">
-                        <div class="product-iterm-img">
+                    <li class="product-item col-3">
+                        <div class="product-item-img">
                             <a href="#">
-                                <img src="./img/pr-02.jpg" alt="product-iterm">
+                                <img src="./img/pr-02.jpg" alt="product-item">
                             </a>
                         </div>
                         <div class="product-info">
@@ -373,84 +372,80 @@
                     <h2 class="section-title">Latest News</h2>
                     <i class="fas fa-trophy"></i>
                     <p>Increased caloric expenditure can result from resistance training both due to acute effects from
-                        training sessions<br>
-                        and long-term effects from increased muscle mass.</p>
+                        training sessions</p>
+                    <p>and long-term effects from increased muscle mass.</p>
                 </div>
-                <ul class="latest-news-list row">
-                    <li class="latest-news-iterm col-4">
+                <ul class="latest-news-list">
+                    <li class="latest-news-item">
                         <div class="latest-news-img">
                             <a href="">
                                 <img src="./img/blog-01.jpg" alt="accessories-for-man">
                             </a>
                         </div>
                         <div class="latest-news-content">
-                            <h4 class="section-sub-title">
+                            <h3 class="section-sub-title">
                                 <a href="#">Tips At-home Cadio Workout</a>
-                            </h4>
-                            <p class="time-post"><span>on</span><time>September 1, 2020</time></p>
+                            </h3>
+                            <p class="time-post">on<time>September 1, 2020</time></p>
                             <p>Time to get your sweat on with this workout for a flat stomach! These are the 10 best
-                                moves
-                                to tighten up that core..</p>
+                                moves to tighten up that core..</p>
                         </div>
-
                     </li>
-                    <li class="latest-news-iterm col-4">
+                    <li class="latest-news-item">
                         <div class="latest-news-img">
                             <a href="">
                                 <img src="./img/blog-02.jpg" alt="accessories-for-man">
                             </a>
                         </div>
                         <div class="latest-news-content">
-                            <h4 class="section-sub-title">
+                            <h3 class="section-sub-title">
                                 <a href="#">5 Tips To Stay Healthy At Home</a>
-                            </h4>
-                            <p class="time-post"><span>on</span><time>September 1, 2020</time></p>
+                            </h3>
+                            <p class="time-post">on<time>September 1, 2020</time></p>
                             <p>And now more than ever it’s so important to continue to take care of ourselves and make
-                                sure
-                                we’re putting extra ca...</p>
+                                sure we’re putting extra ca...</p>
                         </div>
                     </li>
-                    <li class="latest-news-iterm col-4">
+                    <li class="latest-news-item">
                         <div class="latest-news-img">
                             <a href="">
                                 <img src="./img/blog-03.jpg" alt="accessories-for-man">
                             </a>
                         </div>
                         <div class="latest-news-content">
-                            <h4 class="section-sub-title">
+                            <h3 class="section-sub-title">
                                 <a href="#">10 minute Fat Burning Workout For Beginners</a>
-                            </h4>
-                            <p class="time-post"><span>on</span><time>September 1, 2020</time></p>
+                            </h3>
+                            <p class="time-post">on<time>September 1, 2020</time></p>
                             <p>I know sometimes it can be difficult to keep your healthy nutrition on track, so that’s
                                 why Icreated the Hot Body ...
                             </p>
                         </div>
                     </li>
                 </ul>
-                <hr>
             </div>
         </section>
-
+        <hr>
         <section class="section-services">
             <div class="container">
-                <ul class="service-list row">
-                    <li class="col-4">
+                <ul class="service-list">
+                    <li class="service-item">
                         <i class="fas fa-truck"></i>
-                        <div class="service-iterm-info">
+                        <div class="service-item-info">
                             <h4 class="section-sub-title">FREE SHIPPING UK&UK</h4>
                             <p>Free shipping on all orders above $100</p>
                         </div>
                     </li>
-                    <li class="col-4">
+                    <li class="service-item">
                         <i class="fas fa-headset"></i>
-                        <div class="service-iterm-info">
+                        <div class="service-item-info">
                             <h4 class="section-sub-title">SUPPORT 24/7</h4>
                             <p>Contact us 24 hours a day, 7 days a week</p>
                         </div>
                     </li>
-                    <li class="col-4">
+                    <li class="service-item">
                         <i class="fas fa-donate"></i>
-                        <div class="service-iterm-info">
+                        <div class="service-item-info">
                             <h4 class="section-sub-title">30 DAYS MONEY BACK</h4>
                             <p>Simply return it within 30 days for an exchange.</p>
                         </div>
@@ -463,24 +458,25 @@
     <footer class="page-footer">
         <section class="footer-top">
             <div class="container">
-                <ul class="footer-block-list row">
-                    <li class="block-child col-3">
+                <ul class="footer-block-list">
+                    <li class="block-child">
                         <a href="#" class="logo-page-white"><img src="./img/logo-page-white.png" alt="logo-page"></a>
                         <ul class="get-in-touch-list">
-                            <li class="get-in-touch-iterm">
+                            <li class="get-in-touch-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>184 Main Rd E, St Albans</span><span> VIC 3021, Australia</span>
+                                <span>184 Main Rd E, St Albans</span>
+                                <p> VIC 3021, Australia</p>
                             </li>
-                            <li class="hover-blue get-in-touch-iterm">
+                            <li class="hover-blue get-in-touch-item">
                                 <i class="far fa-envelope"></i>
                                 <a href="">contact@company.com</a>
                             </li>
-                            <li class="get-in-touch-iterm">
+                            <li class="get-in-touch-item">
                                 <i class="fas fa-phone-alt"></i>
                                 <span>+001 2233 456</span>
                             </li>
-                            <li class="get-in-touch-iterm get-in-touch-icon-list">
-                                <ul class="row">
+                            <li class="get-in-touch-item">
+                                <ul class="get-in-touch-icon-list">
                                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                     <li><a href=""><i class="fab fa-instagram"></i></i></a></li>
@@ -490,27 +486,27 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="block-child col-2">
+                    <li class="block-child">
                         <h3 class="footer-title">Categories</h3>
-                        <ul class="category-list">
-                            <li><a href="#">Celebrations</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Home Decore</a></li>
-                            <li><a href="#">Seasonal Bouquet</a></li>
-                            <li><a href="#">Wending decor</a></li>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Celebrations</a></li>
+                            <li class="footer-item"><a href="#">Events</a></li>
+                            <li class="footer-item"><a href="#">Home Decore</a></li>
+                            <li class="footer-item"><a href="#">Seasonal Bouquet</a></li>
+                            <li class="footer-item"><a href="#">Wending decor</a></li>
                         </ul>
                     </li>
-                    <li class="block-child col-2">
+                    <li class="block-child">
                         <h3 class="footer-title">Usefull links </h3>
-                        <ul class="link-list">
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Pravacy Policy</a></li>
-                            <li><a href="#">Shipping & Delivery</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Return & Exchanges</a></li>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Contact us</a></li>
+                            <li class="footer-item"><a href="#">Pravacy Policy</a></li>
+                            <li class="footer-item"><a href="#">Shipping & Delivery</a></li>
+                            <li class="footer-item"><a href="#">Terms & Conditions</a></li>
+                            <li class="footer-item"><a href="#">Return & Exchanges</a></li>
                         </ul>
                     </li>
-                    <li class="block-child col-5">
+                    <li class="block-child">
                         <div class="newsletter-content">
                             <h3 class="footer-title">Newsletter Signup</h3>
                             <p>Subscribe to our newsletter and get 10% off your first purchase</p>
@@ -518,7 +514,7 @@
                                 <input type="email" name="email" id="inpEmail" placeholder="Your email address">
                                 <button class="btn-yellow">Subscribe</button>
                             </form>
-                            <ul class="list-pay row">
+                            <ul class="list-pay">
                                 <li><img src="./img/amazon.svg" alt="logo-pay" class="img-pay-logo"></li>
                                 <li><img src="./img/american_express.svg" alt="logo-pay" class="img-pay-logo"></li>
                                 <li><img src="./img/apple_pay.svg" alt="logo-pay" class="img-pay-logo"></li>
@@ -535,21 +531,19 @@
         </section>
         <section class="footer-bottom">
             <div class="container">
-                <ul class="row">
-                    <li class="footer-bottom-left col-6">
+                <ul class="footer-bottom-list">
+                    <li class="footer-bottom-left">
                         <p>Copyright © 2021 <span>Kalles</span> all rights reserved. Powered by
                             <a href="#">The4</a>
                         </p>
                     </li>
-                    <li class="footer-bottom-right col-6">
-                        <nav class="footer-bottom-nav">
-                            <ul class="menu-footer-bottom">
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Blog</a></li>
-                            </ul>
-                        </nav>
+                    <li class="footer-bottom-right">
+                        <ul class="footer-bottom-list">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
