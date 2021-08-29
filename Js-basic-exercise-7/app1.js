@@ -67,7 +67,7 @@ console.log(sum2Dif);
 console.log(sum2Same);
 
 /*2. Write a JavaScript program to compute the absolute difference between a specified number and 19.
- Returns triple their absolute difference if the specified number is greater than 19.*/
+Returns triple their absolute difference if the specified number is greater than 19.*/
 function absWith19(num) {
     if (num >= 19) {
         return (num - 19) * 3;
@@ -107,9 +107,9 @@ function replaceAteriskModThree(str) {
     let arr = convertArr(str);
     let sum = sumArr(arr);
     let arrResult = [];
-    for(let i = 0; i < 10; i++) {
-        if(modThree(sum + i)) {
-            arrResult.push(str.replace('*',i));
+    for (let i = 0; i < 10; i++) {
+        if (modThree(sum + i)) {
+            arrResult.push(str.replace('*', i));
         }
     }
     return arrResult;
@@ -122,13 +122,13 @@ replaceAteriskModThree(str2);
 /* 4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. 
 Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.*/
 function modTwo(num) {
-    if( num % 2 === 0){
+    if (num % 2 === 0) {
         return true;
     } else
         return false;
 }
 function modSix(num) {
-    if(modThree(num) && modTwo(num)) {
+    if (modThree(num) && modTwo(num)) {
         return true;
     } else
         return false;
@@ -137,9 +137,9 @@ function replaceAteriskModSix(str) {
     let arr = convertArr(str);
     let sum = sumArr(arr);
     let arrResult = [];
-    for(let i = 0; i < 10; i++) {
-        if(modSix(sum + i)) {
-            arrResult.push(str.replace('*',i));
+    for (let i = 0; i < 10; i++) {
+        if (modSix(sum + i)) {
+            arrResult.push(str.replace('*', i));
         }
     }
     return arrResult;
