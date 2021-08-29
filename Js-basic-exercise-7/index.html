@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app1.js"></script>
+</head>
+
+<body>
+    <header class="paage-header"></header>
+    <main class="page-main">
+        <h2 class="main-title">knowleage round-up (JS)</h2>
+        <ol class="question-list">
+            <li class="question-item">
+                <p class="question">
+                    What are the differences between a variable that is: "null", "undefined" ?
+                </p>
+                <div class="answer">
+                    <table class="compare">
+                        <tr class="table-title">
+                            <th>null</th>
+                            <th>undefined</th>
+                        </tr>
+                        <tr>
+                            <th>không tồn tại giá trị</th>
+                            <th>Giá trị chưa xác định, giá trị trống</th>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    What is "use strict"? what are the "advantages" and "disadvantages" to using it?
+                </p>
+                <div class="answer">
+                    <p><span class="txt-italic txt-bold">Hoisting: </span>Khi đọc code mà gặp 1 biến chưa khai báo thì nó sẽ tự
+                        động
+                        khai báo biến đó lên đầu trang ở global</p>
+                    <p><span class="txt-italic txt-bold">use-strict (Chế độ nghiêm ngặt): </span>Để quản lý việc hoisting</p>
+                    <p> Advantages and Disadvantages to using "use-strict"
+                    <table>
+                        <tr class="table-title">
+                            <th>Advantages</th>
+                            <th>Disavantages</th>
+                        </tr>
+                        <tr>
+                            <th> Có thể ném một lỗi thông qua các chế dộ nghiêm ngặt như:
+                                <ul>
+                                    <li>Ngăn chặn sử dụng các biến không được khai báo</li>
+                                    <li>Ngăn chặn việc sử dụng tên biến trùng với tên từ khóa</li>
+                                    <li>Ngăn chặn việc xóa các biến (đối tượng hoặc hàm) bằng cách sử dụng từ khóa
+                                        delete
+                                    </li>
+                                </ul>
+                            </th>
+                            <th>
+                                Một vài trình duyệt có thể chưa hỗ trợ chế độ nghiêm ngặc của nó. Hoặc nếu có mà không
+                                bắt
+                                lỗi đầy đủ nhưng lập trình viên có thể chủ quan và không test kỹ.
+                            </th>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    What are the differences between ""=="" and ""==="? Write an example for each case (if any)?
+                </p>
+                <div class="answer">
+                    <table>
+                        <tr class="table-title">
+                            <th>==</th>
+                            <th>===</th>
+                        </tr>
+                        <tr>
+                            <th>Chỉ so sánh giá trị của biến</th>
+                            <th>So sánh cả kiểu dữ liệu và giá trị của biến</th>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    Give a list of "Falsy" values in Javascript.
+                </p>
+                <div class="answer">
+                    <label for="">Falsy list: </label>
+                    <ul>
+                        <li>""</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>0</li>
+                        <li>NaN</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    Give an example for each of the following methods in Javascript (map, filter, reduce, find, some)
+                </p>
+                <div class="answer">
+                    <ul>
+                        <li><span class="txt-italic txt-bold">map(): </span>Tạo ra mảng mới với các phần tử là kết quả của việc
+                            thực thi một hàm lên mảng được gọi</li>
+                        <li><span class="txt-italic txt-bold">filter(): </span>Tạo ra mảng mới với các phần tử thỏa mảng điều
+                            kiện được cung cấp bởi 1 hàm</li>
+                        <li><span class="txt-italic txt-bold">reduce(): </span>Trả về giá trị
+                             là kết quả tích
+                            lũy của 1 hàm</li>
+                        <li><span class="txt-italic">find(): </span>Trả về giá trị của phần tử đầu tiên thỏa điều
+                            kiện của hàm cung cấp</li>
+                        <li><span class="txt-italic txt-bold">some(): </span>Trả về là true nếu bất kỳ phần tử nào trong mảng
+                            thỏa điều kiện của hàm cung cấp. và false nếu không có phần tử nào thỏa mãn</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    Give an example for add a new element to an array[] (at the end)
+                </p>
+                <div class="answer">
+                    <p>
+                        <span class="txt-italic txt-bold">push(): </span>
+                        Thêm mới 1 phần tử vào cuối mảng
+                    </p>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    Give an example for add a new element to an array[] (at the beginning)
+                </p>
+                <div class="answer">
+                    <p>
+                        <span class="txt-italic txt-bold">unshift(): </span>
+                        Thêm mới 1 phần từ vào đầu mảng
+                    </p>
+                </div>
+            </li>
+            <li class="question-item">
+                <p class="question">
+                    Give an example for removing an element in array[]
+                </p>
+                <div class="answer">
+                    <ul>
+                        <li>
+                            <p><span class="txt-italic txt-bold">pop(): </span>Xóa phần tử cuối mảng</p>
+                        </li>
+                        <li>
+                            <p><span class="txt-italic txt-bold">splice(): </span>Xóa/ thêm phần tử vào vị trí nào đó bất kỳ được
+                                cung cấp</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer class="page-footer"></footer>
+</body>
+
+</html>
