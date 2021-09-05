@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/c644953976.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c644953976.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="page-header flex-space-between ">
+        <a href="index.html" class="logo-page-black">
+            <img src="./img/logo-page-black.svg" alt="logo Kalle's black">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-menu flex-space-between ">
+                <li class="header-item"><a href="#">DEMO</a></li>
+                <li class="header-item"><a href="#">SHOP</a></li>
+                <li class="header-item"><a href="#">PRODUCT</a></li>
+                <li class="header-item"><a href="#">SALE</a></li>
+                <li class="header-item"><a href="#">PORTFOLIO</a></li>
+                <li class="header-item"><a href="#">LOOKBOOK</a></li>
+                <li class="header-item"><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+        <div class="header-social">
+            <ul class="header-social-list flex-space-between ">
+                <li class="header-social-item"><a href=""><i class="fas fa-search"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-user"></i></a></li>
+                <li class="header-social-item"><a href=""><i class="fas fa-heart"><span>0</span></i></a></li>
+                <li class="header-social-item">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"><span>0</span></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="section-cart">
+            <div class="container cart-list">
+                <h3 class="section-title">YOUR CART</h3>
+                <div class="product-cart-header border-bottom-cart">
+                    <h5 class="product-cart-actions align-center">ACTION</h5>
+                    <h5 class="product-cart-title align-center">PRODUCT</h5>
+                    <h5 class="product-cart-price align-center">PRICE</h5>
+                    <h5 class="product-cart-color align-center">COLOR</h5>
+                    <h5 class="product-cart-quantity align-center">QUAITITY</h5>
+                    <h5 class="product-total align-center">TOTAL</h5>
+                </div>
+                <div class="products-cart-container">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="footer-top">
+            <div class="container">
+                <ul class="footer-block-list flex-around">
+                    <li class="block-child">
+                        <a href="#" class="logo-page-white"><img src="./img/logo-page-white.png" alt="logo-page"></a>
+                        <ul class="get-in-touch-list">
+                            <li class="get-in-touch-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>184 Main Rd E, St Albans</span>
+                                <p> VIC 3021, Australia</p>
+                            </li>
+                            <li class="hover-blue get-in-touch-item">
+                                <i class="far fa-envelope"></i>
+                                <a href="">contact@company.com</a>
+                            </li>
+                            <li class="get-in-touch-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+001 2233 456</span>
+                            </li>
+                            <li class="get-in-touch-item">
+                                <ul class="get-in-touch-icon-list flex-around">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="block-child">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Celebrations</a></li>
+                            <li class="footer-item"><a href="#">Events</a></li>
+                            <li class="footer-item"><a href="#">Home Decore</a></li>
+                            <li class="footer-item"><a href="#">Seasonal Bouquet</a></li>
+                            <li class="footer-item"><a href="#">Wending decor</a></li>
+                        </ul>
+                    </li>
+                    <li class="block-child">
+                        <h3 class="footer-title">Usefull links </h3>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Contact us</a></li>
+                            <li class="footer-item"><a href="#">Pravacy Policy</a></li>
+                            <li class="footer-item"><a href="#">Shipping & Delivery</a></li>
+                            <li class="footer-item"><a href="#">Terms & Conditions</a></li>
+                            <li class="footer-item"><a href="#">Return & Exchanges</a></li>
+                        </ul>
+                    </li>
+                    <li class="block-child">
+                        <div class="newsletter-content">
+                            <h3 class="footer-title">Newsletter Signup</h3>
+                            <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                            <form action="">
+                                <input type="email" name="email" id="inpEmail" placeholder="Your email address">
+                                <button class="btn-yellow">Subscribe</button>
+                            </form>
+                            <ul class="list-pay flex-around">
+                                <li><img src="./img/amazon.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/american_express.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/apple_pay.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/bitcoin.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/paypal.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/f_pay.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/sofort.svg" alt="logo-pay" class="img-pay-logo"></li>
+                                <li><img src="./img/visa.svg" alt="logo-pay" class="img-pay-logo"></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <ul class="footer-bottom-list flex-space-between">
+                    <li class="footer-bottom-left">
+                        <p>Copyright © 2021 <span>Kalles</span> all rights reserved. Powered by
+                            <a href="#">The4</a>
+                        </p>
+                    </li>
+                    <li class="footer-bottom-right">
+                        <ul class="footer-bottom-list flex-space-between">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+
+</html>
