@@ -1,0 +1,308 @@
+@import url('reset.css');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: #222222;
+    font-weight: 400;
+    background-color: white;
+    
+}
+img {
+    max-width: 100%;
+}
+a img {
+    vertical-align: top;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+.color-blue {
+    color: blue;
+}
+.color-yellow {
+    color: rgb(255, 251, 0);
+}
+.color-red {
+    color: red;
+}
+.color-green {
+    color: green;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-title {
+    font-size: 40px;
+}
+.action-title {
+    font-size: 25px;
+}
+.form-title {
+    font-size: 30px;
+    color: blue;
+    margin: 20px 0;
+}
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-end {
+    display: flex;
+    justify-content: end;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between
+}
+.page-header {
+    margin: 30px 0;
+}
+.btn-add-new {
+    width: 30px;
+    height: 30px;
+    color: black;
+    background-color: rgb(221, 163, 96);
+    border-color: brown;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btn-add-new:hover {
+    background-color: cadetblue;
+    border-color: darkgoldenrod;
+}
+/* page header */
+.page-header {
+    margin: 0 30px;
+    line-height: 80px;
+}
+.logo-page img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+.header-menu li {
+    padding: 0 10px;
+}
+.header-menu li a {
+    font-weight: 800;
+    color: black;
+}
+.header-menu li a:hover {
+    color: #ff8400;
+}
+.header-social-list li {
+    padding: 0 10px;
+}
+.header-social-list li i {
+    font-size: 18px;
+    color: black;
+}
+.header-social-list li i:hover {
+    color: #ff8400;
+}
+.header-social-list li .fa-heart {
+    position: relative;
+}
+.header-social-list li a {
+    position: relative;
+}
+.header-social-list li span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.header-social-list li:hover span {
+    color: black;
+}
+.project-manager-aside {
+    padding-top: 20px;
+    width: 20%;
+    background-color:rgb(235, 223, 210);
+    border-right: 2px solid rgb(113, 113, 243);
+}
+.project-list {
+    margin: 30px 0;
+    color: #222222;
+    font-size: 20px;
+}
+.content-project {
+    display: block;
+    width: 100%;
+}
+.display-none {
+    display: none;
+}
+.project-manager-content {
+    background-color: rgb(187, 201, 204);
+    width: 80%;
+    padding-left: 30px;
+    line-height: 20px;
+}
+.lb-info {
+    display: inline-block;
+    width: 100px;
+    margin-left: 100px;
+}
+.lb-color {
+    color: rgb(219, 99, 78);
+}
+.form-content {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.inp-height {
+    height: 40px;
+}
+.day-start,
+.day-end {
+    width: 50%;
+}
+.day-start input,
+.day-end input {
+    width: 70%;
+}
+.day-start input {
+    margin-left: 30%;
+}
+.action-form {
+    width: 85%;
+}
+.btn-action-form {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(219, 197, 172);
+    border-radius: 5px;
+    margin: 10px;
+    border-color: cornflowerblue;
+}
+.btn-action-form:hover {
+    background-color: rgb(236, 217, 191);
+    border-color: rgb(167, 193, 243);
+}
+.project-manager-list {
+    display: none;
+}
+.form-add-new-task {
+    width: 60%;
+    display: none;
+}
+.project-list-title {
+    font-size: 20px;
+    color: rgb(122, 62, 19);
+    margin: 30px 0;
+    padding-left: 10px;
+}
+.btn-project {
+    width: 90%;
+    height: 30px;
+    border: 1px solid rgb(122, 62, 19);
+    border-radius: 7px;
+    background-color:darkkhaki;
+    margin: 10px auto;
+    padding: 5px;
+}
+.btn-action {
+    background-color: rgb(187, 201, 204);
+    border: none;
+}
+.aside-project-name {
+    padding-left: 20px;
+    color: #3f51b5f0;
+    font-size: 18px;
+}
+.btn-add-task {
+    width: 20px;
+    height: 20px;
+    background-color: burlywood;
+    margin-right: 10px;
+    border: none;
+    color: chocolate;
+    border-radius: 50%;
+}
+.btn-add-task:hover {
+    background-color: rgb(196, 196, 233);
+}
+.btn-add-task:hover i {
+    color: blue;
+}
+.btn-add-task i {
+    font-size: 14px;
+    color: black;
+}
+.info-title {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(122, 62, 19);
+}
+.info-project {
+    display: inline-block;
+    width: 80%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.inp-task {
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px;
+    background-color: rgb(197, 177, 154);
+    border-radius: 5px;
+    border: 1px solid rgb(122, 71, 71);
+    height: 25px;
+}
+.actions-add-task{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.actions-add-task i:first-child {
+    margin-right: 5px;
+}
+.btn-action-add-task {
+    border: none;
+    background-color: rgb(235, 223, 210);
+}
+.task-list {
+    width: 80%;
+    display: inline-block;
+}
+.task-item {
+    width: 90%;
+    height: 30PX;
+    border-radius: 7PX;
+    background-color:  rgb(181, 191, 192);
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.action-on-task-item {
+    margin-right: 20px;
+}
+.btn-task {
+    border: none;
+    background-color: rgb(181, 191, 192);
+}
+
