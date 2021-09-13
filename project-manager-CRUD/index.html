@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c644953976.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="container flex-space-between">
+            <a href="" class="logo-page">
+                <img src="./img/logo_manager_go.gif" alt="logo Kalle's black">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu flex-space-between ">
+                    <li class="header-item"><a href="#">PROJECT</a></li>
+                    <li class="header-item"><a href="#">USER</a></li>
+                    <li class="header-item"><a href="#">HELP</a></li>
+                </ul>
+            </nav>
+            <div class="header-social">
+                <ul class="header-social-list flex-space-between ">
+                    <li class="header-social-item"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class="header-social-item"><a href=""><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+        <div class="container flex-space-around">
+            <aside class="project-manager-aside">
+                <div class="aside-title flex-space-around">
+                    <h2 class="action-title">Add new project</h2>
+                    <button class="btn-add-new" id="btn-add-new">+</button>
+                </div>
+                <div class="content-project">
+                </div>
+            </aside>
+            <section class="project-manager-content" id="project-manager">
+                <form action="" id="form-add-new" class="form-add-new display-none">
+                    <h3 class="form-title">Add new project</h3>
+                    <label for="projectName" class="lb-info lb-color">Name: </label>
+                    <input type="text" name="projectName" id="inpName" placeholder="Project Name"
+                        class="form-content inp-height"><br>
+                    <label for="projectDescription" class="lb-info lb-color">Description: </label>
+                    <textarea name="projectDescription" id="txtDescription" cols="90" rows="5"
+                        class="form-content"></textarea><br>
+                    <div class="flex-space-between">
+                        <div class="day-start">
+                            <label for="dayStart" class="lb-info lb-color">Day start: </label><br>
+                            <input type="text" name="dayStart" id="dayStart" class="inp-height">
+                        </div>
+                        <div class="day-end">
+                            <label for="dayEnd lb-color" class="lb-color">Day end: </label><br>
+                            <input type="date" name="dayEnd" id="dayEnd" placeholder="Day end" class="inp-height">
+                        </div>
+                    </div> <br>
+                    <label for="otExpected" class="lb-info lb-color">OT Expected: </label>
+                    <input type="text" name="otExpected" id="otExpected" placeholder="OT Expected"
+                        class="form-content inp-height"><br>
+                    <label for="status" class="lb-info lb-color">Status: </label>
+                    <input type="text" name="status" id="status" placeholder="Status"
+                        class="form-content inp-height"><br>
+                    <div class="action-form flex-end">
+                        <button type="submit" class="btn-action-form" id="btn-save">Save</button>
+                        <button type="submit" class="btn-action-form" id="btn-cancel">Cancel</button>
+                    </div>
+                </form>
+                <div class="project-list-container">
+                </div>
+                <form action="" id="form-edit-project" class="form-edit-project display-none">
+                    <h3 class="form-title">Edit project</h3>
+                    <label for="projectName" class="lb-info lb-color">Name: </label>
+                    <input type="text" name="projectName" id="inpEditName" placeholder="Project Name"
+                        class="form-content inp-height"><br>
+                    <label for="projectDescription" class="lb-info lb-color">Description: </label>
+                    <textarea name="projectDescription" id="txtEditDescription" cols="90" rows="5"
+                        class="form-content"></textarea><br>
+                    <div class="flex-space-between">
+                        <div class="day-start">
+                            <label for="dayStart" class="lb-info lb-color">Day start: </label><br>
+                            <input type="text" name="dayStart" id="dayEditStart" class="inp-height">
+                        </div>
+                        <div class="day-end">
+                            <label for="dayEnd lb-color" class="lb-color">Day end: </label><br>
+                            <input type="date" name="dayEnd" id="dayEditEnd" placeholder="Day end" class="inp-height">
+                        </div>
+                    </div> <br>
+                    <label for="otExpected" class="lb-info lb-color">OT Expected: </label>
+                    <input type="text" name="otExpected" id="otEditExpected" placeholder="OT Expected"
+                        class="form-content inp-height"><br>
+                    <label for="status" class="lb-info lb-color">Status: </label>
+                    <input type="text" name="status" id="statusEdit" placeholder="Status"
+                        class="form-content inp-height"><br>
+                    <div class="action-form flex-end">
+                        <button type="submit" class="btn-action-form" id="btn-edit">Edit</button>
+                        <button type="submit" class="btn-action-form btn-cancel" id="btn-edit-cancel">Cancel</button>
+                    </div>
+                </form>
+                <form action="" class="show-info-project display-none" id="show-info-project">
+                    <h3 class="form-title" id="info-project-title"></h3>
+                    <label for="" class="info-title">Description:</label><span
+                        class="info-project-description info-project"></span> <br>
+                    <label for="" class="info-title">Day start:</label><span
+                        class="info-project-day-start info-project"></span><br>
+                    <label for="" class="info-title">Day end:</label><span
+                        class="info-project-day-end info-project"></span><br>
+                    <label for="" class="info-title">OT Expected:</label><span
+                        class="info-project-ot info-project"></span><br>
+                    <label for="" class="info-title">Status:</label><span
+                        class="info-project-status info-project"></span><br>
+                    <div class="tasks-content flex-space-between">
+                        <label for="" class="info-title">TASK LIST:</label>
+                        <ul class="task-list" id="task-list">
+                        </ul>
+                    </div>
+                    <div class="action-form flex-end">
+                        <button type="submit" class="btn-action-form btn-back" id="btn-back"><i
+                            class="fas fa-arrow-left"></i> Back</button>
+                        <button type="submit" class="btn-action-form" id="btn-edit-project"><i
+                                class="fa fa-pencil-square-o color-yellow" aria-hidden="true"></i> Edit</button>
+                        <button type="submit" class="btn-action-form btn-del" id="btn-delete-project"><i
+                                class="fa fa-trash-o color-red" aria-hidden="true"></i> Delete</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer"></footer>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
