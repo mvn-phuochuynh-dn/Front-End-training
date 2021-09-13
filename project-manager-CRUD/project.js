@@ -35,6 +35,7 @@ const $infoDayEnd = document.querySelector(".info-project-day-end");
 const $infoOT = document.querySelector(".info-project-ot");
 const $infoStatus = document.querySelector(".info-project-status");
 const $taskList = document.querySelector("#task-list");
+const $btnBack = document.getElementById("btn-back");
 const $btnEditProject = document.getElementById("btn-edit-project");
 const $btnDeleteProject = document.getElementById("btn-delete-project");
 
@@ -170,6 +171,7 @@ function onLoad() {
                     <td>${projects2[i].OTExpected}</td>
                     <td>${projects2[i].status}</td>
                     <td>
+                        <button class="btn-action" onclick="ViewProject(${i})"><i class="far fa-eye color-blue"></i></button>
                         <button class="btn-action" onclick="UpdateProject(${i})"><i class="fa fa-pencil-square-o color-yellow" aria-hidden="true"></i></button>
                         <button class="btn-action" onclick="Delete(projects2,${i})"><i class="fa fa-trash-o color-red" aria-hidden="true"></i></button>
                     </td>
@@ -185,6 +187,12 @@ function onLoad() {
             `
         }
     }
+}
+
+function ViewProject(item) { 
+    hiddenFrom($projectListContainer);
+    infoProject(item);
+    showForm($formShowInfoProject);
 }
 function UpdateProject(item) {
     let projects3 = getLocalStorage("projectsLocal");
@@ -275,6 +283,11 @@ function infoProject(i) {
         hiddenFrom($formShowInfoProject);
         showForm($projectListContainer);
     });
+    $btnBack.addEventListener('click', function(e) {
+        e.preventDefault();
+        hiddenFrom($formShowInfoProject);
+        showForm($projectListContainer);
+    })
 }
 
 
