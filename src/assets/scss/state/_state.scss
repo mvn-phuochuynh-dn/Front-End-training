@@ -1,0 +1,60 @@
+.white-text {
+  color: map-get($colors, white);
+  &:hover {
+    color: map-get($colors, primary);
+  }
+}
+.color-green {
+  color: green;
+}
+.color-red {
+  color: red;
+}
+.hidden {
+  display: none;
+}
+section {
+  @include pxRem(padding, 50 0);
+}
+.section-title-box {
+  @include pxRem(max-width, 660);
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title {
+  @include pxRem(font-size, 36);
+  line-height: 1.4;
+  font-weight: map-get($font-weight, medium);
+}
+.section-sub-title {
+  @include pxRem(font-size, 20);
+  color: map-get($colors, primary);
+  display: inline-block;
+}
+.top {
+  top: 0px;
+}
+@include respond-below(large) {
+  .section-title {
+    @include pxRem(font-size, 32);
+  }
+  .section-sub-title {
+    @include pxRem(font-size, 14);
+  }
+  p {
+    @include pxRem(font-size, 14);
+    // @include pxRem(margin, 0 200);
+  }
+}
+@include respond-below(wide) {
+  .section-title {
+    @include pxRem(font-size, 28);
+  }
+  .section-sub-title {
+    @include pxRem(font-size, 10);
+  }
+  p {
+    @include pxRem(font-size, 14);
+    // @include pxRem(margin, 0 200);
+  }
+}

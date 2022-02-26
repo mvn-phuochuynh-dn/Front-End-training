@@ -1,0 +1,41 @@
+.section-screenshots {
+  @include pxRem(padding, 100 0);
+  background-color: map-get($colors, bg-black);
+  color: map-get($colors, white);
+  .respond-large-hidden {
+    display: block;
+  }
+  .respond-large {
+    display: none;
+  }
+  .respond-wide {
+    display: none;
+  }
+}
+
+@include respond-below(large) {
+  .section-screenshots {
+    .respond-large-hidden {
+      display: none;
+    }
+    .respond-wide {
+      display: none;
+    }
+    .respond-large {
+      display: block;
+    }
+  }
+}
+@include respond-below(wide) {
+  .section-screenshots {
+    .respond-large-hidden {
+      display: none;
+    }
+    .respond-large {
+      display: none;
+    }
+    .respond-wide {
+      display: block;
+    }
+  }
+}

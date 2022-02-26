@@ -1,0 +1,37 @@
+.section-app-download {
+  @include pxRem(margin-bottom, 100);
+  .app-download {
+    background-color: map-get($colors, bg-blue);
+    @include pxRem(padding, 50);
+    &-content {
+      @include pxRem(padding, 50 0);
+      .playstore-btn,
+      .applestore-btn {
+        @include pxRem(font-size, 14);
+        @include pxRem(font-weight, 500);
+        @include pxRem(border-radius, 5);
+        @include pxRem(height, 80);
+        position: relative;
+        background-color:map-get($colors, bg-home );
+        display: block;
+      }
+      .btn-box {
+        @include pxRem(margin-top, 50);
+        &-content {
+          left: 30%;
+          span {
+            @include pxRem(padding, 7 0);
+          &:first-child {
+            color: map-get($colors, txt-gray );
+            @include pxRem(font-size,18);
+          }
+          &:last-child {
+            @include pxRem(font-size,24);
+            font-weight: map-get($font-weight, bold );
+          }
+          }
+        }
+      }
+    }
+  }
+}

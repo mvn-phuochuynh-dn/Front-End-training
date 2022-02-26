@@ -1,0 +1,100 @@
+.section-overview {
+  .overview-container {
+    &-left {
+      height: auto;
+      &-content {
+        @include pxRem(padding-right, 15);
+      }
+    }
+    .feature-item {
+      .feature-icon {
+        @include pxRem(font-size, 40);
+        color: map-get($colors, primary);
+        font-weight: map-get($font-weight, bold);
+      }
+      .box-link {
+        .link {
+          display: inline-block;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            border-bottom: 2px solid map-get($colors, black);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 500ms;
+          }
+          &:hover {
+            color: map-get($colors, primary);
+            transition-duration: 500ms;
+          }
+          &:hover::after {
+            right: 100%;
+          }
+        }
+      }
+    }
+    &-right {
+      @include pxRem(height, 800);
+      .overview-img {
+        height: 100%;
+        text-align: center;
+        background-image: url(../../../images//overview1.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+          width: 100%;
+          height: auto;
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include respond-below(large) {
+  .section-overview {
+    .overview-container {
+      &-left {
+        height: auto;
+      }
+      .feature-item {
+        .feature-icon {
+          @include pxRem(height, 70);
+        }
+      }
+      &-right {
+        .overview-img {
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .section-overview {
+    .overview-container {
+      &-left {
+        height: auto;
+        &-content {
+          text-align: center;
+          p {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+      &-right {
+        @include pxRem(height, 600);
+        .overview-img {
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
