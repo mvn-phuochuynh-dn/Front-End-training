@@ -1,0 +1,75 @@
+.white-text {
+  color: map-get($colors, white);
+  &:hover {
+    color: map-get($colors, primary);
+  }
+}
+.color-green {
+  color: green;
+}
+.color-red {
+  color: red;
+}
+.hidden {
+  display: none;
+}
+section {
+  @include pxRem(padding, 50 0);
+}
+.section-title-box {
+  @include pxRem(max-width, 660);
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title {
+  text-align: center;
+  @include pxRem(max-width, 640);
+  display: block;
+  @include pxRem(font-size, 36);
+  line-height: 1.4;
+  font-weight: map-get($font-weight, medium);
+  margin: 0 auto;
+}
+.section-sub-title {
+  font-weight: map-get($font-weight, medium);
+  color: map-get($colors, primary);
+  display: block;
+}
+.top {
+  top: 0px;
+}
+
+
+@include respond-below(wide) {
+  .section-title {
+    @include pxRem(font-size, 28);
+  }
+  .section-sub-title {
+    @include pxRem(font-size, 13);
+  }
+  p {
+    @include pxRem(font-size, 15);
+    color: map-get($colors, txt-black);
+    // @include pxRem(margin, 0 200);
+  }
+}
+@include respond-below(medium) {
+  .section-title {
+    @include pxRem(font-size, 20);
+  }
+  .section-sub-title {
+    @include pxRem(font-size, 14);
+  }
+  p {
+    @include pxRem(font-size, 14);
+    // @include pxRem(margin, 0 200);
+  }
+}
+@include respond-below(small) {
+  .section-title {
+    @include pxRem(font-size, 20);
+  }
+}
+.text-align-center {
+  text-align: center;
+}

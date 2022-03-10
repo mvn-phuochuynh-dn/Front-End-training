@@ -1,0 +1,108 @@
+.section-video {
+  .video-box {
+    position: relative;
+    width: 100%;
+    @include pxRem(height, 660);
+    @include pxRem(border-radius, 10);
+    .video-img {
+      &::before {
+        content: "";
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+        background: rgba(34, 36, 50, 0.52);
+        border-radius: 10px;
+        opacity: 0.6;
+        z-index: 7;
+      }
+      &:hover::before {
+        opacity: 0;
+        transition-duration: 0.75s;
+      }
+    }
+    .img-bg {
+      @include pxRem(border-radius, 10);
+      width: 90%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+    }
+    .video-btn {
+      @include pxRem(font-size, 70);
+      @include pxRem(width, 100);
+      @include pxRem(height, 100);
+      border-radius: 50%;
+      color: white;
+      z-index: 7;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border: 2px solid map-get($colors, white);
+        animation: ripple 2s linear infinite;
+        z-index: 7;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        border: 2px solid map-get($colors, white);
+        animation: ripple 2s linear 1s infinite;
+        z-index: 7;
+      }
+    }
+    .video-shape1 {
+      position: absolute;
+      z-index: 2;
+      left: 1%;
+      animation: videoShape1 5s linear infinite alternate;
+    }
+    .video-shape2 {
+      position: absolute;
+      z-index: 2;
+      @include pxRem(right, -20);
+      animation: videoShape2 5s linear infinite alternate;
+    }
+  }
+}
+@include respond-below(medium) {
+  .video-shape1 {
+    display: none;
+  }
+  .video-shape2 {
+    display: none;
+  }
+}
+@include respond-below(small) {
+  .section-video {
+    .video-box {
+      @include pxRem(height, 350);
+      .video-img {
+        &::before {
+          width: 100%;
+        }
+        .img-bg {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}

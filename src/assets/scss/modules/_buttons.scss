@@ -1,0 +1,13 @@
+.btn {
+    display: inline-block;
+    @include pxRem(padding,15 35);
+    @include pxRem(border-radius,40);
+    box-shadow: 0px 12px 35px rgb(240, 157, 190);
+}
+.btn-primary {
+    background: linear-gradient(50deg, #ED2775 7%, #FF7448 90%);
+    color: map-get($colors, white );
+    &:hover {
+        background: map-get($colors, primary );
+    }
+}

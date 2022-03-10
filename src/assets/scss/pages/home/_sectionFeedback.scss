@@ -1,0 +1,88 @@
+.section-feedback {
+  background-color: map-get($colors, bg-blue);
+  @include pxRem(padding, 100 0);
+  .feedback {
+    &-slides {
+      display: block;
+    }
+    &-slides-medium {
+      display: none;
+    }
+    .owl-theme {
+      .owl-dots {
+        .owl-dot span {
+          width: 20px;
+          height: 20px;
+          background-color: map-get($colors, grey);
+        }
+        .owl-dot.active span {
+          width: 20px;
+          height: 20px;
+          background: linear-gradient(
+            279.99deg,
+            #9f5ff1 -1.19%,
+            #ff54b0 50.99%,
+            #ff9f5a 100%
+          );
+        }
+      }
+    }
+    .single-feedback-box {
+      background-color: map-get($colors, white);
+      .client-info {
+        &-avt {
+          img {
+            border-radius: 50%;
+          }
+        }
+        &-title {
+          span {
+            color: map-get($colors, primary);
+          }
+        }
+      }
+      p {
+        @include pxRem(padding, 30);
+      }
+      .rating {
+        font-weight: map-get($font-weight, normal);
+      }
+    }
+    .star-list {
+      .star-item {
+        color: map-get($colors, yellow);
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-feedback {
+    .feedback {
+      &-slides {
+        display: none;
+      }
+      &-slides-medium {
+        display: block;
+      }
+    }
+    .owl-theme {
+      .owl-dots {
+        .owl-dot span {
+          width: 20px;
+          height: 20px;
+          background-color: map-get($colors, grey);
+        }
+        .owl-dot.active span {
+          width: 20px;
+          height: 20px;
+          background: linear-gradient(
+            279.99deg,
+            #9f5ff1 -1.19%,
+            #ff54b0 50.99%,
+            #ff9f5a 100%
+          );
+        }
+      }
+    }
+  }
+}

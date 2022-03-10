@@ -1,0 +1,81 @@
+.section-features {
+  @include pxRem(padding, 50 0);
+  .feature-list {
+    flex-wrap: nowrap;
+    .feature-item {
+      h3 {
+        @include pxRem(font-size, 20);
+      }
+    }
+  }
+  .feature-item-icon {
+    &::before {
+      content: "";
+      position: absolute;
+      @include pxRem(width, 65);
+      @include pxRem(height, 31);
+      right: 0;
+      left: 0;
+      top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(../../../images/shape12.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &::after {
+      content: "";
+      transform: scaleX(-1) scaleY(-1);
+      position: absolute;
+      @include pxRem(width, 65);
+      @include pxRem(height, 31);
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(../../../images/shape12.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+@include respond-below(large) {
+  .section-features {
+    .feature-list {
+      .feature-item {
+        h3 {
+          @include pxRem(font-size, 17);
+        }
+      }
+    }
+  }
+}
+
+@include respond-below(wide) {
+  .section-features {
+    @include pxRem(padding-top, 200);
+    .feature-list {
+      flex-wrap: wrap;
+      .feature-item {
+        @include pxRem(margin-top, 30);
+      }
+    }
+    h3 {
+      @include pxRem(font-size, 18);
+    }
+  }
+}
+@include respond-below(small) {
+  .section-features {
+    @include pxRem(padding-top, 0);
+    .feature-list {
+      flex-wrap: wrap;
+      .feature-item {
+        width: 50%;
+      }
+    }
+  }
+}

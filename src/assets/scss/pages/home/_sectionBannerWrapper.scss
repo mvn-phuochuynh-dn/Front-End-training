@@ -1,0 +1,169 @@
+$height: #{f-pxRem(800)};
+.section-banner-wrapper {
+  border-bottom: #{f-pxRem(1)} solid #eeeeee;
+  position: relative;
+  height: 900px;
+  &-left {
+    height: $height;
+    position: relative;
+    &-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .sub-title {
+        border-left: #{f-pxRem(2)} solid map-get($colors, primary);
+        @include pxRem(font-size, 18);
+        color: map-get($colors, primary);
+      }
+      .banner-title {
+        @include pxRem(font-size, 45);
+        @include pxRem(line-height, 70);
+        font-weight: map-get($font-weight, bold);
+      }
+    }
+  }
+  &-right {
+    @include pxRem(height, 850);
+    position: relative;
+    &-image-1 {
+      position: absolute;
+      bottom: 0;
+      z-index: 20;
+      right: 0;
+    }
+    &-image-2 {
+      position: absolute;
+      bottom: 0;
+      z-index: 10;
+      right: 0;
+      &-active {
+        left: 0;
+      }
+    }
+  }
+  .shape-1 {
+    position: absolute;
+    left: 44%;
+    top: 23%;
+    z-index: 30;
+    animation: shape-1-spin infinite 15s linear;
+  }
+  .shape-2 {
+    position: absolute;
+    bottom: 0;
+    animation: shape-2 3s linear 2s infinite alternate;
+  }
+}
+
+@include respond-below(wide) {
+  .section-banner-wrapper {
+    @include pxRem(margin, 200 0);
+    &-left {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      &-content {
+        text-align: center;
+        .sub-title,
+        p {
+          @include pxRem(font-size, 15);
+        }
+        .banner-title {
+          @include pxRem(font-size, 32);
+          @include pxRem(line-height, 20);
+        }
+        p {
+          @include pxRem(margin, 0 100);
+        }
+      }
+    }
+      &-right {
+        width: 100%;
+        @include pxRem(height, 850);
+        position: relative;
+        transition-duration: 1s;
+        &-image-1 {
+          position: absolute;
+          @include pxRem(right, 130);
+          bottom: 0;
+          z-index: 20;
+        }
+        &-image-2 {
+          position: absolute;
+          @include pxRem(right, 150);
+          bottom: 0;
+          z-index: 19;
+          opacity: 0;
+          &-active {
+            @include pxRem(left, 130);
+            opacity: 1;
+          }
+        }
+      }
+    .shape-1 {
+      display: none;
+    }
+    .shape-2 {
+      display: none;
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-banner-wrapper {
+    @include pxRem(margin, 0);
+    &-left {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      &-content {
+        text-align: center;
+        .sub-title,
+        p {
+          @include pxRem(font-size, 15);
+        }
+        .banner-title {
+          @include pxRem(font-size, 23);
+          line-height: 1.5;
+        }
+        p {
+          @include pxRem(margin, 0);
+        }
+      }
+    }
+      &-right {
+        width: 100%;
+        @include pxRem(height, 850);
+        position: relative;
+        transition-duration: 1s;
+        &-image-1 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 20;
+          // img {
+          //   width: 100%;
+          //   height: auto;
+          //   margin: 0 auto;
+          // }
+        }
+        &-image-2 {
+          display: none;
+          position: absolute;
+          @include pxRem(right, 100);
+          bottom: 0;
+          z-index: 19;
+          opacity: 0;
+          &-active {
+            @include pxRem(left, 70);
+            opacity: 1;
+          }
+        }
+      }
+    .shape-1 {
+      display: none;
+    }
+    .shape-2 {
+      display: none;
+    }
+  }
+}

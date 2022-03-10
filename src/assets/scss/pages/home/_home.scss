@@ -1,0 +1,132 @@
+@import "./sectionBannerWrapper";
+@import "./sectionPartner";
+@import "./sectionOverview";
+@import "./sectionFeatures";
+@import "./sectionVideo";
+@import "./sectionFeaturesEver";
+@import "./sectionScreenshots";
+@import "./sectionSoftwareIntergration";
+@import "./sectionAppDownload";
+@import "./sectionPricingTable";
+@import "./sectionFeedback";
+@import "./sectionBlog";
+
+.page-home {
+  position: relative;
+  height: auto;
+  &-active {
+    background-color: map-get($colors, bg-home);
+  }
+  .feature-item-icon {
+    position: relative;
+    @include pxRem(font-size, 45);
+    @include pxRem(width, 100);
+    @include pxRem(height, 100);
+    border-radius: 50%;
+    color: map-get($colors, white);
+  }
+  .go-top {
+    position: fixed;
+    opacity: 0;
+    @include pxRem(width, 45);
+    @include pxRem(height, 45);
+    @include pxRem(right, 20);
+    @include pxRem(font-size, 27);
+    text-align: center;
+    border-radius: 50%;
+    color: map-get($colors, white);
+    background: linear-gradient(50deg, #ed2775 7%, #ff7448 90%);
+    cursor: pointer;
+    z-index: 999;
+    &-icon {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .go-top-active {
+    animation: toTop 0.5s;
+    opacity: 1;
+    bottom: 30px;
+  }
+}
+@keyframes toTop {
+  from {
+    bottom: 0;
+  } 
+  to {
+    bottom: 30px;
+  }
+}
+@keyframes shape-1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape-2 {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 33%;
+  }
+}
+@keyframes ripple {
+  from {
+    opacity: 1;
+  }
+  to {
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    opacity: 0;
+  }
+}
+@keyframes ripple2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    top: -65%;
+    right: -65%;
+    bottom: -65%;
+    left: -65%;
+    opacity: 0;
+  }
+}
+@keyframes videoShape1 {
+  from {
+    @include pxRem(bottom, 80);
+  }
+  to {
+    @include pxRem(bottom, 120);
+  }
+}
+@keyframes videoShape2 {
+  from {
+    @include pxRem(bottom, 130);
+  }
+  to {
+    @include pxRem(bottom, 170);
+  }
+}
+@keyframes shape5 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 3%;
+  }
+}
+@keyframes shape-6 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

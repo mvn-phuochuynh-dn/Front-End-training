@@ -1,0 +1,149 @@
+.section-overview {
+  .overview-container {
+    &-left {
+      height: auto;
+      &-content {
+        @include pxRem(padding-right, 15);
+        .section-title {
+          max-width: 100%;
+          text-align: left;
+        }
+      }
+    }
+    .feature-item {
+      .feature-icon {
+        @include pxRem(font-size, 40);
+        color: map-get($colors, primary);
+        font-weight: map-get($font-weight, bold);
+      }
+      h3 {
+        @include pxRem(font-size, 17);
+      }
+      .box-link {
+        .link {
+          display: inline-block;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            border-bottom: 2px solid map-get($colors, black);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 500ms;
+          }
+          &:hover {
+            color: map-get($colors, primary);
+            transition-duration: 500ms;
+          }
+          &:hover::after {
+            right: 100%;
+          }
+        }
+      }
+    }
+    &-right {
+      @include pxRem(height, 800);
+      .overview-img {
+        height: 100%;
+        text-align: center;
+        background-image: url(../../../images//overview1.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+          width: 100%;
+          height: auto;
+          display: none;
+        }
+      }
+    }
+  }
+}
+@include respond-below(large) {
+  .section-overview {
+    .overview-container {
+      &-left {
+        height: auto;
+        &-content {
+          .section-title {
+            text-align: center;
+          }
+        }
+      }
+      .feature-item {
+        .feature-icon {
+          @include pxRem(height, 70);
+        }
+      }
+      &-right {
+        height: auto;
+        .overview-img {
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-below(wide) {
+  .section-overview {
+    .overview-container {
+      &-left {
+        height: auto;
+        span,
+        h2 {
+          max-width: 540px;
+          margin: 0 auto;
+        }
+        &-content {
+          text-align: center;
+          p {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .feature-item-wide {
+        justify-content: center;
+      }
+      &-right {
+        @include pxRem(height, 600);
+        .overview-img {
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-between(wide, large) {
+  .section-overview {
+    .overview-container {
+      .feature-list {
+        li {
+          width: 100%;
+          span {
+            width: 8.33333%;
+          }
+          .feature-item-content {
+            width: 91.66667%;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(small) {
+  .section-overview {
+    .feature-item {
+      width: 100%;
+    }
+    .overview-container-right {
+      height: auto;
+    }
+  }
+}

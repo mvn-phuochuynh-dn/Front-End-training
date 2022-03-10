@@ -1,0 +1,40 @@
+.section-features-ever {
+  @include pxRem(padding, 100 0);
+  .feature-list-box {
+    @include pxRem(margin, 50 0);
+    .feature-item {
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include respond-below(wide) {
+  .section-features-ever {
+    .feature-list-box {
+      .feature-item {
+        p {
+          @include pxRem(margin, 0 50);
+        }
+        h3 {
+          @include pxRem(font-size, 18);
+        }
+      }
+    }
+  }
+}
+@include respond-between(medium, wide) {
+  .section-features-ever {
+    .feature-list-box {
+      .feature-item {
+        width: 33, 3333%;
+      }
+    }
+  }
+}
+@include respond-below(small) {
+  .section-features-ever {
+    @include pxRem(padding, 50 0);
+  }
+}
