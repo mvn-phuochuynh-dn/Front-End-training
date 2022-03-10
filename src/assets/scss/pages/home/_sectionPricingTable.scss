@@ -13,7 +13,7 @@
       background-color: map-get($colors, white);
       @include pxRem(padding, 70 0);
       height: 100%;
-      box-shadow: 0px 25px 50px 5px map-get($colors, white);
+      box-shadow: 0px 25px 50px 5px map-get($colors, white) / 10%;
       &:first-child {
         @include pxRem(margin-right, 30);
       }

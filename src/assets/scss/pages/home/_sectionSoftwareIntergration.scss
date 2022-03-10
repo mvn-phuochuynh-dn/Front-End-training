@@ -87,6 +87,15 @@
     }
   }
 }
+@include respond-below(largest) {
+  .section-software-intergrations {
+    .software-intergrations-content {
+      .section-title {
+        text-align: left;
+      }
+    }
+  }
+}
 @include respond-below(wide) {
   .section-software-intergrations {
     .shape-5 {
