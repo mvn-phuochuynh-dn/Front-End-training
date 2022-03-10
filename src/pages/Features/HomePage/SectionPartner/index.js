@@ -28,28 +28,28 @@ function Partner() {
             dotsClass="hidden"
             margin={10}
           >
-            <a href="#" className="item">
+            <a href="/partner1" className="item">
               <img src={partner1}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner2" className="item">
               <img src={partner2}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner3" className="item">
               <img src={partner3}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner4" className="item">
               <img src={partner4}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner5" className="item">
               <img src={partner5}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner6" className="item">
               <img src={partner6}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner7" className="item">
               <img src={partner7}></img>
             </a>
-            <a href="#" className="item">
+            <a href="/partner8" className="item">
               <img src={partner8}></img>
             </a>
           </OwlCarousel>
