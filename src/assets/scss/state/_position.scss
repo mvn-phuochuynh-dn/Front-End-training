@@ -13,3 +13,6 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.pos-left-5 {
+    @include pxRem(left, 5);
+}

@@ -20,7 +20,7 @@ function SoftwareIntergrations() {
     <section className="section-software-intergrations">
       <div className="container">
         <div className="software-intergrations flex">
-          <div className="software-intergrations-content col-medium-12 col-large-6 col-largest-6">
+          <div className="software-intergrations-content col-small-12 col-medium-12 col-large-6 col-largest-6">
             <span className="section-sub-title pb-30 pt-30">
               SOFTWARE INTERGRATIONS
             </span>
@@ -42,51 +42,61 @@ function SoftwareIntergrations() {
               Get Started
             </NavLink>
           </div>
-          <div className="software-intergrations-img ml-30 col-medium-12 col-large-6 col-largest-6">
-            <img src={imgSoftware} alt="img-software" className="software-img"/>
-            <ul className="software-intergrations-list">
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item item-1"
-              >
-                <img src={atlassian} alt="atlassian" />
-              </li>
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item"
-              >
-                <img src={skype} alt="skype" />
-              </li>
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item"
-              >
-                <img src={gdrive} alt="atlassian" />
-              </li>
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item"
-              >
-                <img src={slack} alt="atlassian" />
-              </li>
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item"
-              >
-                <img src={jira} alt="atlassian" />
-              </li>
-              <li
-                data-aos="fade-down"
-                className="aos-init aos-animate software-intergrations-item"
-              >
-                <img src={frame} alt="atlassian" />
-              </li>
-            </ul>
+          <div className="software-intergrations-img col-small-12 col-medium-12 col-large-6 col-largest-6">
+            <div className="container">
+              <div style={{width: "90%", margin: "0 auto"}}>
+                <div className="software-img">
+                  <img
+                    src={imgSoftware}
+                    alt="img-software"
+                    className="img-main"
+                  />
+                  <ul className="software-intergrations-list">
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={atlassian} alt="atlassian" />
+                    </li>
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={skype} alt="skype" />
+                    </li>
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={gdrive} alt="atlassian" />
+                    </li>
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={slack} alt="atlassian" />
+                    </li>
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={jira} alt="atlassian" />
+                    </li>
+                    <li
+                      data-aos="fade-down"
+                      className="aos-init aos-animate software-intergrations-item"
+                    >
+                      <img src={frame} alt="atlassian" />
+                    </li>
+                  </ul>
+                  <div className="shape-5">
+                    <img src={shape5} alt="shape-5" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="shape-5">
-        <img src={shape5} alt="shape-5" />
       </div>
     </section>
   );

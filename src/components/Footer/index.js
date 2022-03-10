@@ -45,27 +45,27 @@ function Footer() {
         <div className="footer-bottom flex-column flex-center-y pb-30">
           <nav className="footer-nav p-20">
             <ul className="footer-menu flex">
-              <li className="footer-menu-item p-20">
+              <li className="footer-menu-item p-15">
                 <NavLink className="white-text" to="/services">
                   Services
                 </NavLink>
               </li>
-              <li className="footer-menu-item p-20">
+              <li className="footer-menu-item p-15">
                 <NavLink className="white-text" to="/support">
                   Support
                 </NavLink>
               </li>
-              <li className="footer-menu-item p-20">
+              <li className="footer-menu-item p-15">
                 <NavLink className="white-text" to="/privacyPolicy">
                   Privacy Policy
                 </NavLink>
               </li>
-              <li className="footer-menu-item p-20">
+              <li className="footer-menu-item p-15">
                 <NavLink className="white-text" to="/FAQ">
                   FAQ's
                 </NavLink>
               </li>
-              <li className="footer-menu-item p-20">
+              <li className="footer-menu-item p-15">
                 <NavLink className="white-text" to="/contact">
                   Contact
                 </NavLink>

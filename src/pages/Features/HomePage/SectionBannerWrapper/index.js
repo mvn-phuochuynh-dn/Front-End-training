@@ -8,8 +8,9 @@ import shape2 from "../../../../assets/images/shape-2.png";
 function BannerWrapper({ onLoad }) {
   return (
     <section className="section-banner-wrapper">
-      <div className="container flex wrap">
-        <div className="section-banner-wrapper-left col-medium-12 col-large-5 col-largest-5">
+      <div className="container">
+        <div className="flex flex-center wrap ">
+        <div className="section-banner-wrapper-left col-medium-5 col-large-5 col-largest-5">
           <div className="section-banner-wrapper-left-content">
             <span className="sub-title pl-20 pt-5 pb-5">
               Secure Application
@@ -26,14 +27,14 @@ function BannerWrapper({ onLoad }) {
             </NavLink>
           </div>
         </div>
-        <div className="section-banner-wrapper-right col-medium-12 col-large-7 col-largest-7">
+        <div className="section-banner-wrapper-right col-medium-7 col-large-7 col-largest-7">
           <div className="section-banner-wrapper-right-image-1">
             <img src={bannerImg1} alt="banner-img1" />
           </div>
           <div
             className={
-              onLoad
-                ? "section-banner-wrapper-right-image-2 banner-wrapper-right-image-2-active"
+              onLoad 
+                ? "section-banner-wrapper-right-image-2 section-banner-wrapper-right-image-2-active"
                 : "section-banner-wrapper-right-image-2"
             }
           >
@@ -46,6 +47,7 @@ function BannerWrapper({ onLoad }) {
       </div>
       <div className="shape-2">
         <img src={shape2} alt="shape-2"></img>
+      </div>
       </div>
     </section>
   );

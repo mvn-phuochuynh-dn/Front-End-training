@@ -1,0 +1,147 @@
+.page-header {
+  width: 100%;
+  @include pxRem(font-size, 15.2);
+  font-weight: map-get($font-weight, medium);
+  background: transparent;
+  z-index: 999;
+  animation-duration: 0.2s;
+  box-shadow: 0 0px 28px 0 rgb(202, 201, 201);
+  &-active {
+    position: sticky;
+    top: 0;
+    background-color: map-get($colors, white);
+  }
+  .header-logo {
+    display: inline-block;
+  }
+  .header-socials {
+    .menu-icon {
+      display: none;
+      @include pxRem(font-size, 40);
+      font-weight: map-get($font-weight, bold);
+    }
+  }
+  .menu-item {
+    &-text {
+      &-icon {
+        @include pxRem(font-size, 10);
+      }
+      &:hover {
+        color: map-get($colors, primary);
+        transition-duration: 0.75s;
+      }
+    }
+    .dropdown-menu {
+      @include pxRem(min-width, 300);
+      @include pxRem(top, 60);
+      box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(3)} rgb(238, 235, 235);
+      -moz-box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(3)} rgb(238, 235, 235);
+      -webkit-box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(3)} rgb(238, 235, 235);
+      z-index: 99;
+      background-color: map-get($colors, white);
+      &-item {
+        @include pxRem(padding, 15 28);
+        @include pxRem(font-size, 16);
+        font-size: 16;
+        font-weight: map-get($font-weight, normal);
+        &:last-child:hover .dropdown-menu-right {
+          display: block;
+        }
+        &:hover .dropdown-menu-text {
+          @include pxRem(padding-left, 10);
+          color: map-get($colors, primary);
+          transition-duration: 1s;
+        }
+        &:hover .menu-item-text-icon {
+          color: map-get($colors, primary);
+          transition-duration: 1s;
+        }
+      }
+      &-right {
+        background-color: map-get($colors, white);
+        @include pxRem(min-width, 300);
+        @include pxRem(top, 0);
+        @include pxRem(left, 300);
+        box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(2)} rgb(238, 235, 235);
+        -moz-box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(2)} rgb(238, 235, 235);
+        -webkit-box-shadow: 0px 0px #{f-pxRem(5)} #{f-pxRem(2)}
+          rgb(238, 235, 235);
+        &-item {
+          @include pxRem(padding, 15 28);
+          @include pxRem(font-size, 16);
+          font-weight: map-get($font-weight, normal);
+          &:hover {
+            @include pxRem(padding-left, 40);
+            color: map-get($colors, primary);
+            transition-duration: 1.5s;
+          }
+          &:hover .dropdown-menu-right-text {
+            color: map-get($colors, primary);
+          }
+          &:hover .menu-item-text-icon {
+            color: map-get($colors, primary);
+          }
+        }
+      }
+      &-block-list {
+        .menu-sub-title {
+          @include pxRem(font-size, 20);
+          @include pxRem(font-weight, 500);
+          border-bottom: 1px solid map-get($colors, border-gray);
+        }
+        .sub-menu {
+          &-list {
+            font-size: map-get($font-weight, normal);
+          }
+          &-item {
+            @include pxRem(padding, 10 0);
+            &:hover {
+              color: map-get($colors, primary);
+              transition-duration: 0.5s;
+            }
+          }
+        }
+      }
+    }
+    &:hover .dropdown-menu {
+      display: block;
+    }
+    &:hover .menu-item-text {
+      color: map-get($colors, primary);
+    }
+  }
+}
+@include respond-below(wide) {
+  .page-header {
+    .page-header-flex {
+      justify-content: space-between;
+      .header-logo {
+        width: 50%;
+      }
+      .header-nav {
+          width: 50%;
+        display: none;
+      }
+      .header-socials {
+          width: 50%;
+        justify-content: flex-end;
+        .menu-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include respond-below(large) {
+  .page-header {
+    .header-logo {
+      width: 25%;
+    }
+    .header-nav {
+      width: 50%;
+    }
+    .header-socials {
+      width: 25%;
+    }
+  }
+}

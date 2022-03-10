@@ -9,7 +9,9 @@ function Video() {
     <section className="section-video">
       <div className="container">
         <div className="video-box">
-          <img src={videoImg2} alt="video-img2" className="img-bg"/>
+          <div className="video-img">
+            <img src={videoImg2} alt="video-img2" className="img-bg" />
+          </div>
           <a
             href="https://www.youtube.com/watch?v=PWvPbGWVRrU"
             className="video-btn bg-2 position-absolute pos-center"
@@ -17,8 +19,16 @@ function Video() {
             <RiPlayLine className="position-absolute pos-center" />
           </a>
           <div className="video-shape">
-            <img className="video-shape1" src={videoShape1} alt="video-shape1" />
-            <img className="video-shape2"  src={videoShape2} alt="video-shape1" />
+            <img
+              className="video-shape1"
+              src={videoShape1}
+              alt="video-shape1"
+            />
+            <img
+              className="video-shape2"
+              src={videoShape2}
+              alt="video-shape1"
+            />
           </div>
         </div>
       </div>

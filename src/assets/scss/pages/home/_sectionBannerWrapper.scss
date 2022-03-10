@@ -2,7 +2,7 @@ $height: #{f-pxRem(800)};
 .section-banner-wrapper {
   border-bottom: #{f-pxRem(1)} solid #eeeeee;
   position: relative;
-  height: $height;
+  height: 900px;
   &-left {
     height: $height;
     position: relative;
@@ -23,7 +23,7 @@ $height: #{f-pxRem(800)};
     }
   }
   &-right {
-    height: $height;
+    @include pxRem(height, 850);
     position: relative;
     &-image-1 {
       position: absolute;
@@ -55,47 +55,111 @@ $height: #{f-pxRem(800)};
   }
 }
 
-
 @include respond-below(wide) {
   .section-banner-wrapper {
     @include pxRem(margin, 200 0);
     &-left {
       height: auto;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       &-content {
         text-align: center;
-        .sub-title, p {
+        .sub-title,
+        p {
           @include pxRem(font-size, 15);
         }
         .banner-title {
           @include pxRem(font-size, 32);
-        @include pxRem(line-height, 20);
+          @include pxRem(line-height, 20);
         }
         p {
           @include pxRem(margin, 0 100);
         }
       }
     }
-    &-right {
-      @include pxRem(margin-top, 50);
-      &-image-1 {
-        position: absolute;
-        z-index: 20;
-        bottom: 0;
-        right: 150px;
+      &-right {
+        width: 100%;
+        @include pxRem(height, 850);
+        position: relative;
+        transition-duration: 1s;
+        &-image-1 {
+          position: absolute;
+          @include pxRem(right, 130);
+          bottom: 0;
+          z-index: 20;
+        }
+        &-image-2 {
+          position: absolute;
+          @include pxRem(right, 150);
+          bottom: 0;
+          z-index: 19;
+          opacity: 0;
+          &-active {
+            @include pxRem(left, 130);
+            opacity: 1;
+          }
+        }
       }
-      &-image-2 {
-        position: absolute;
-        bottom: 0;
-        z-index: 10;
-        left: 150px;
-        &-active {
-          left: 150px;
+    .shape-1 {
+      display: none;
+    }
+    .shape-2 {
+      display: none;
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-banner-wrapper {
+    @include pxRem(margin, 0);
+    &-left {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+      &-content {
+        text-align: center;
+        .sub-title,
+        p {
+          @include pxRem(font-size, 15);
+        }
+        .banner-title {
+          @include pxRem(font-size, 23);
+          line-height: 1.5;
+        }
+        p {
+          @include pxRem(margin, 0);
         }
       }
     }
-    .shape-1 { 
+      &-right {
+        width: 100%;
+        @include pxRem(height, 850);
+        position: relative;
+        transition-duration: 1s;
+        &-image-1 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 20;
+          // img {
+          //   width: 100%;
+          //   height: auto;
+          //   margin: 0 auto;
+          // }
+        }
+        &-image-2 {
+          display: none;
+          position: absolute;
+          @include pxRem(right, 100);
+          bottom: 0;
+          z-index: 19;
+          opacity: 0;
+          &-active {
+            @include pxRem(left, 70);
+            opacity: 1;
+          }
+        }
+      }
+    .shape-1 {
       display: none;
     }
     .shape-2 {

@@ -25,6 +25,7 @@ function Feedback() {
             <OwlCarousel
               className="owl-theme"
               autoplay
+              item="3"
               margin={30}
               dotsClass="owl-dots mt-30"
               dotClass="owl-dot"
@@ -334,6 +335,172 @@ function Feedback() {
                         <RiStarFill />
                         <RiStarFill />
                         <RiStarLine />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </OwlCarousel>
+          </div>
+          <div className="feedback-slides-medium">
+            <OwlCarousel
+              className="owl-theme"
+              autoplay
+              margin={30}
+              items="1"
+              dotsClass="owl-dots mt-30"
+              dotClass="owl-dot"
+            >
+              <div className="item">
+                <div className="single-feedback-box">
+                  <div className="client-info flex p-30">
+                    <div className="client-info-avt col-3">
+                      <img src={user1} alt="user1" />
+                    </div>
+                    <div className="client-info-title pl-30 col-9">
+                      <h3 className="username pb-15 pt-15">Deanna Hodges</h3>
+                      <span>Spotify Developer</span>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type.
+                  </p>
+                  <div className="rating p-30 flex flex-space-between p-30 pl-30">
+                    <h5>Theme Customization</h5>
+                    <ul className="star-list">
+                      <li className="star-item">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="single-feedback-box">
+                  <div className="client-info flex p-30">
+                    <div className="client-info-avt col-3">
+                      <img src={user2} alt="user2" />
+                    </div>
+                    <div className="client-info-title pl-30 col-9">
+                      <h3 className="username pb-15 pt-15">Londy Vargas</h3>
+                      <span>PHP Developer</span>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type.
+                  </p>
+                  <div className="rating p-30 flex flex-space-between p-30">
+                    <h5>Customer Support</h5>
+                    <ul className="star-list">
+                      <li className="star-item">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="single-feedback-box">
+                  <div className="client-info flex p-30">
+                    <div className="client-info-avt col-3">
+                      <img src={user3} alt="user3" />
+                    </div>
+                    <div className="client-info-title pl-30 col-9">
+                      <h3 className="username pb-15 pt-15">Jame Andy</h3>
+                      <span>Moodle Developer</span>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type.
+                  </p>
+                  <div className="rating p-30 flex flex-space-between p-30">
+                    <h5>Reponsive Design</h5>
+                    <ul className="star-list">
+                      <li className="star-item">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarLine />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="single-feedback-box">
+                  <div className="client-info flex p-30">
+                    <div className="client-info-avt col-3">
+                      <img src={user4} alt="user3" />
+                    </div>
+                    <div className="client-info-title pl-30 col-9">
+                      <h3 className="username pb-15 pt-15">David Warner</h3>
+                      <span>Python Developer</span>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type.
+                  </p>
+                  <div className="rating p-30 flex flex-space-between p-30">
+                    <h5>Design Quality</h5>
+                    <ul className="star-list">
+                      <li className="star-item">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarHalfLine />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="item">
+                <div className="single-feedback-box">
+                  <div className="client-info flex p-30">
+                    <div className="client-info-avt col-3">
+                      <img src={user3} alt="user3" />
+                    </div>
+                    <div className="client-info-title pl-30 col-9">
+                      <h3 className="username pb-15 pt-15">David Warner</h3>
+                      <span>Python Developer</span>
+                    </div>
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type.
+                  </p>
+                  <div className="rating p-30 flex flex-space-between p-30">
+                    <h5>Design Quality</h5>
+                    <ul className="star-list">
+                      <li className="star-item">
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarFill />
+                        <RiStarHalfLine />
                       </li>
                     </ul>
                   </div>

@@ -11,6 +11,7 @@ $font-weight: (
 // == Breakpoints === //
 $breakpoints: (
   small: 480px,
+  smaller: 577px,
   medium: 768px,
   wide: 960px,
   large: 1024px,
@@ -20,7 +21,7 @@ $breakpoints: (
 // === Colors === //
 $colors: (
   primary: #ED2775,
-  white: #fff,
+  white: #ffffff,
   black: #111,
   yellow: #FFCA40,
   txt-black: #333,
@@ -38,7 +39,7 @@ $colors: (
   brand-nodejs: #7cbe42,
   bg-black: #262A37,
   bg-grey: #3D4354,
-  bg-home: rgb(247, 243, 243),
+  bg-home: #fff,
   bg-blue: #F4F8FC,
 );
 

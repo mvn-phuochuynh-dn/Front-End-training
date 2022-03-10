@@ -1,6 +1,12 @@
 .section-features {
+  @include pxRem(padding, 50 0);
   .feature-list {
     flex-wrap: nowrap;
+    .feature-item {
+      h3 {
+        @include pxRem(font-size, 20);
+      }
+    }
   }
   .feature-item-icon {
     &::before {
@@ -36,10 +42,21 @@
     }
   }
 }
+@include respond-below(large) {
+  .section-features {
+    .feature-list {
+      .feature-item {
+        h3 {
+          @include pxRem(font-size, 17);
+        }
+      }
+    }
+  }
+}
 
 @include respond-below(wide) {
   .section-features {
-    @include pxRem(margin-top, 300);
+    @include pxRem(padding-top, 200);
     .feature-list {
       flex-wrap: wrap;
       .feature-item {
@@ -48,6 +65,17 @@
     }
     h3 {
       @include pxRem(font-size, 18);
+    }
+  }
+}
+@include respond-below(small) {
+  .section-features {
+    @include pxRem(padding-top, 0);
+    .feature-list {
+      flex-wrap: wrap;
+      .feature-item {
+        width: 50%;
+      }
     }
   }
 }

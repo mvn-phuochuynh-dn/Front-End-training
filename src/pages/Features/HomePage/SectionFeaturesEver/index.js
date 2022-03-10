@@ -20,7 +20,7 @@ function FeaturesEver() {
         </div>
         <div className="feature-list-box">
           <ul className="feature-list flex flex-center-x wrap">
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-1">
                 <span className="position-absolute pos-center">
                   <RiEyeLine />
@@ -32,7 +32,7 @@ function FeaturesEver() {
                 whatever you want for your able business purpose.
               </p>
             </li>
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-2">
                 <span className="position-absolute pos-center">
                   <RiStackLine />
@@ -44,7 +44,7 @@ function FeaturesEver() {
                 whatever you want for your able business purpose.
               </p>
             </li>
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-3">
                 <span className="position-absolute pos-center">
                   <RiLeafLine />
@@ -56,7 +56,7 @@ function FeaturesEver() {
                 whatever you want for your able business purpose.
               </p>
             </li>
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-4">
                 <span className="position-absolute pos-center">
                   <RiSecurePaymentLine />
@@ -68,7 +68,7 @@ function FeaturesEver() {
                 whatever you want for your able business purpose.
               </p>
             </li>
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-1">
                 <span className="position-absolute pos-center">
                   <RiCloudLine />
@@ -80,7 +80,7 @@ function FeaturesEver() {
                 whatever you want for your able business purpose.
               </p>
             </li>
-            <li className="feature-item col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
+            <li className="feature-item col-small-6 col-medium-6 col-large-4 col-largest-4 flex-column flex-center-y pl-10 pr-10 mt-30">
               <div className="feature-item-icon mb-30 bg-1">
                 <span className="position-absolute pos-center">
                   <RiPieChart2Line />

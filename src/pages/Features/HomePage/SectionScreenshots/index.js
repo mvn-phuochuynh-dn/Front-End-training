@@ -140,6 +140,88 @@ function Screenshots() {
             </div>
           </OwlCarousel>
         </div>
+        <div className="screenshots-slides respond-medium">
+          <OwlCarousel
+            className="owl-theme"
+            items="2"
+            autoplay
+            loop
+            dotsClass="hidden"
+            margin={30}
+          >
+            <div className="item">
+              <img src={screeshots1} alt="screeshots1" />
+            </div>
+            <div className="item">
+              <img src={screeshots2} alt="screeshots2" />
+            </div>
+            <div className="item">
+              <img src={screeshots3} alt="screeshots3" />
+            </div>
+            <div className="item">
+              <img src={screeshots4} alt="screeshots4" />
+            </div>
+            <div className="item">
+              <img src={screeshots5} alt="screeshots5" />
+            </div>
+            <div className="item">
+              <img src={screeshots1} alt="screeshots1" />
+            </div>
+            <div className="item">
+              <img src={screeshots2} alt="screeshots2" />
+            </div>
+            <div className="item">
+              <img src={screeshots3} alt="screeshots3" />
+            </div>
+            <div className="item">
+              <img src={screeshots4} alt="screeshots4" />
+            </div>
+            <div className="item">
+              <img src={screeshots5} alt="screeshots5" />
+            </div>
+          </OwlCarousel>
+        </div>
+        <div className="screenshots-slides respond-small">
+          <OwlCarousel
+            className="owl-theme"
+            items="1"
+            autoplay
+            loop
+            dotsClass="hidden"
+            margin={30}
+          >
+            <div className="item">
+              <img src={screeshots1} alt="screeshots1" />
+            </div>
+            <div className="item">
+              <img src={screeshots2} alt="screeshots2" />
+            </div>
+            <div className="item">
+              <img src={screeshots3} alt="screeshots3" />
+            </div>
+            <div className="item">
+              <img src={screeshots4} alt="screeshots4" />
+            </div>
+            <div className="item">
+              <img src={screeshots5} alt="screeshots5" />
+            </div>
+            <div className="item">
+              <img src={screeshots1} alt="screeshots1" />
+            </div>
+            <div className="item">
+              <img src={screeshots2} alt="screeshots2" />
+            </div>
+            <div className="item">
+              <img src={screeshots3} alt="screeshots3" />
+            </div>
+            <div className="item">
+              <img src={screeshots4} alt="screeshots4" />
+            </div>
+            <div className="item">
+              <img src={screeshots5} alt="screeshots5" />
+            </div>
+          </OwlCarousel>
+        </div>
       </div>
     </section>
   );

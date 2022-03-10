@@ -54,6 +54,41 @@ function Partner() {
             </a>
           </OwlCarousel>
         </div>
+        <div className="partner-slides-medium pt-30 pb-30">
+          <OwlCarousel
+            className="owl-theme"
+            items="2"
+            autoplay
+            loop
+            dotsClass="hidden"
+            margin={10}
+          >
+            <a href="#" className="item">
+              <img src={partner1}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner2}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner3}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner4}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner5}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner6}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner7}></img>
+            </a>
+            <a href="#" className="item">
+              <img src={partner8}></img>
+            </a>
+          </OwlCarousel>
+        </div>
       </div>
     </section>
   );

@@ -11,6 +11,12 @@
   .respond-wide {
     display: none;
   }
+  .respond-medium {
+    display: none;
+  }
+  .respond-small {
+    display: none;
+  }
 }
 
 @include respond-below(large) {
@@ -23,6 +29,12 @@
     }
     .respond-large {
       display: block;
+    }
+    .respond-medium {
+      display: none;
+    }
+    .respond-small {
+      display: none;
     }
   }
 }
@@ -37,5 +49,47 @@
     .respond-wide {
       display: block;
     }
+    .respond-medium {
+      display: none;
+    }
+    .respond-small {
+      display: none;
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-screenshots {
+    .respond-large-hidden {
+      display: none;
+    }
+    .respond-large {
+      display: none;
+    }
+    .respond-wide {
+      display: none;
+    }
+    .respond-medium {
+      display: block;
+    }
+    .respond-small {
+      display: none;
+    }
+  }
+}
+@include respond-between(small, smaller) {
+  .respond-large-hidden {
+    display: none;
+  }
+  .respond-large {
+    display: none;
+  }
+  .respond-wide {
+    display: none;
+  }
+  .respond-medium {
+    display: none;
+  }
+  .respond-small {
+    display: block;
   }
 }

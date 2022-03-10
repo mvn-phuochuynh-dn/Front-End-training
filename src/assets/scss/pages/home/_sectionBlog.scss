@@ -1,11 +1,18 @@
 .section-blog {
   @include pxRem(padding, 100 0);
   .blog-item {
+    &:first-child {
+      @include pxRem(margin-right, 30);
+    }
+    &:last-child {
+      @include pxRem(margin-left, 30);
+    }
     &-img {
-      max-width: 390px;
-      max-height: 310px;
+      @include pxRem(max-width, 390);
+      @include pxRem(max-height, 310);
       overflow: hidden;
       position: relative;
+      margin: auto;
       &:hover img {
         transform: scale(1.1);
       }
@@ -25,11 +32,17 @@
         @include pxRem(padding, 7 20);
         @include pxRem(border-radius, 2);
         text-align: center;
-        color: map-get($colors, white );
-        background: linear-gradient(279.99deg, #9F5FF1 -1.19%, #FF54B0 50.99%, #FF9F5A 100%);
+        color: map-get($colors, white);
+        background: linear-gradient(
+          279.99deg,
+          #9f5ff1 -1.19%,
+          #ff54b0 50.99%,
+          #ff9f5a 100%
+        );
       }
     }
     &-content {
+      @include pxRem(padding-left, 35);
       .meta-list {
         color: map-get($colors, txt-gray);
         .meta-item {
@@ -38,14 +51,14 @@
           @include pxRem(padding-bottom, 8);
           @include pxRem(margin-right, 15);
           &:last-child {
-              span {
-                  &:last-child {
-                      &:hover {
-                          transition-duration: .2s;
-                          color: map-get($colors,primary );
-                      }
-                  }
+            span {
+              &:last-child {
+                &:hover {
+                  transition-duration: 0.2s;
+                  color: map-get($colors, primary);
+                }
               }
+            }
           }
           .meta-icon {
             position: absolute;
@@ -57,15 +70,82 @@
         }
       }
       .blog-title {
-          line-height: 40px;
-           &-link {
-             @include pxRem(font-size, 20);
-               text-decoration: none;
-               &:hover {
-                   text-decoration: underline;
-                   transition-duration: .25s;
-               }
-           }   
+        line-height: 40px;
+        &-link {
+          @include pxRem(font-size, 20);
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            transition-duration: 0.25s;
+          }
+        }
+      }
+    }
+  }
+}
+@include respond-below(wide) {
+  .section-blog {
+    .blog {
+      &-list {
+        flex-wrap: wrap;
+      }
+      &-item {
+        width: 33, 3333%;
+        &:first-child {
+          @include pxRem(margin-bottom, 60);
+        }
+        &-img {
+          max-width: 100%;
+          height: auto;
+          img {
+            margin: auto;
+            width: 90%;
+          }
+          .blog-tag {
+            left: 7%;
+          }
+        }
+        &-content {
+          width: 90%;
+          margin: auto;
+          padding-left: 0;
+        }
+        &:first-child {
+          @include pxRem(margin-right, 0);
+        }
+        &:last-child {
+          @include pxRem(margin-left, 0);
+          @include pxRem(margin-top, 0);
+        }
+      }
+    }
+  }
+}
+@include respond-below(medium) {
+  .section-blog {
+    .blog {
+      &-item {
+        &:last-child {
+          @include pxRem(margin-top, 60);
+        }
+        &-img {
+          img {
+            margin: auto;
+            width: 80%;
+          }
+          .blog-tag {
+            left: 12%;
+          }
+        }
+        &-content {
+          width: 80%;
+          margin: auto;
+          padding-left: 0;
+          .blog-title {
+            margin-top: 0 !important;
+            line-height: 1.2;
+          }
+        }
       }
     }
   }

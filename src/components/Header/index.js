@@ -12,16 +12,16 @@ import ContactMenu from "./ContactMenu";
 
 function Header({ navbar }) {
   return (
-    <div className={navbar ? "page-header page-header-active" : "page-header"}>
+    <header className={navbar ? "page-header page-header-active" : "page-header"}>
       <div className="container">
-        <div className=" flex flex-center-y" style={{ height: 100 }}>
+        <div className="page-header-flex flex flex-center-y" style={{ height: 100 }}>
           <NavLink
             to="/"
-            className="header-logo col-medium-6 col-wide-2 col-large-3 col-largest-3"
+            className="header-logo col-medium-6 col-large-3 col-largest-3"
           >
             <img src={headerLogo} alt="header-logo" />
           </NavLink>
-          <nav className="header-nav col-wide-8 col-large-6 col-largest-6">
+          <nav className="header-nav col-large-6 col-largest-6">
             <ul className="header-menu flex flex-space-around">
               <HomeMenu />
               <AboutUsMenu />
@@ -31,7 +31,7 @@ function Header({ navbar }) {
               <ContactMenu />
             </ul>
           </nav>
-          <div className="header-socials col-medium-6 col-wide-2 col-large-3 col-largest-3 flex flex-end-x">
+          <div className="header-socials col-medium-6 col-large-3 col-largest-3 flex flex-end-x">
             <NavLink to="/started" className="btn btn-primary  ">
               Get Started
             </NavLink>
@@ -41,7 +41,7 @@ function Header({ navbar }) {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

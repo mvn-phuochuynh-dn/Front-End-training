@@ -16,8 +16,8 @@ function PricingTable() {
               No Hidden, Charge Applied, Choose Your Plan
             </h2>
           </div>
-          <ul className="pricing-table-list flex flex-center-x pt-30">
-            <li className="pricing-table-item col-4">
+          <ul className="pricing-table-list flex pt-30">
+            <li className="pricing-table-item col-medium-5 col-large-4 col-largest-4">
               <div className="pricing-table-item-content pl-30">
                 <div className="item-title-box">
                   <h3>Basic</h3>
@@ -70,7 +70,7 @@ function PricingTable() {
                 </ul>
               </div>
             </li>
-            <li className="pricing-table-item col-4 ml-30 mr-30">
+            <li className="pricing-table-item col-medium-5 col-large-4 col-largest-4">
               <div className="pricing-table-item-content pl-30">
                 <div className="item-title-box">
                   <h3>Basic</h3>
@@ -130,7 +130,7 @@ function PricingTable() {
                 </ul>
               </div>
             </li>
-            <li className="pricing-table-item col-4">
+            <li className="pricing-table-item col-medium-5 col-large-4 col-largest-4">
               <div className="pricing-table-item-content pl-30">
                 <div className="item-title-box">
                   <h3>Basic</h3>
