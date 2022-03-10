@@ -29,28 +29,28 @@ function Partner() {
             margin={10}
           >
             <a href="/partner1" className="item">
-              <img src={partner1}></img>
+              <img src={partner1} alt="partner1"></img>
             </a>
             <a href="/partner2" className="item">
-              <img src={partner2}></img>
+              <img src={partner2} alt="partner2"></img>
             </a>
             <a href="/partner3" className="item">
-              <img src={partner3}></img>
+              <img src={partner3} alt="partner3"></img>
             </a>
             <a href="/partner4" className="item">
-              <img src={partner4}></img>
+              <img src={partner4} alt="partner4"></img>
             </a>
             <a href="/partner5" className="item">
-              <img src={partner5}></img>
+              <img src={partner5} alt="partner5"></img>
             </a>
             <a href="/partner6" className="item">
-              <img src={partner6}></img>
+              <img src={partner6} alt="partner6"></img>
             </a>
             <a href="/partner7" className="item">
-              <img src={partner7}></img>
+              <img src={partner7} alt="partner7"></img>
             </a>
             <a href="/partner8" className="item">
-              <img src={partner8}></img>
+              <img src={partner8} alt="partner8"></img>
             </a>
           </OwlCarousel>
         </div>
@@ -63,29 +63,29 @@ function Partner() {
             dotsClass="hidden"
             margin={10}
           >
-            <a href="#" className="item">
-              <img src={partner1}></img>
+            <a href="/partner1" className="item">
+              <img src={partner1} alt="partner1"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner2}></img>
+            <a href="/partner2" className="item">
+              <img src={partner2} alt="partner2"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner3}></img>
+            <a href="/partner3" className="item">
+              <img src={partner3} alt="partner3"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner4}></img>
+            <a href="/partner4" className="item">
+              <img src={partner4} alt="partner4"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner5}></img>
+            <a href="/partner5" className="item">
+              <img src={partner5} alt="partner5"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner6}></img>
+            <a href="/partner6" className="item">
+              <img src={partner6} alt="partner6"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner7}></img>
+            <a href="/partner7" className="item">
+              <img src={partner7} alt="partner7"></img>
             </a>
-            <a href="#" className="item">
-              <img src={partner8}></img>
+            <a href="/partner8" className="item">
+              <img src={partner8} alt="partner8"></img>
             </a>
           </OwlCarousel>
         </div>
