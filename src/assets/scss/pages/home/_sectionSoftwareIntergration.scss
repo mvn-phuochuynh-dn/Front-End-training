@@ -1,5 +1,8 @@
 .section-software-intergrations {
   @include pxRem(padding, 100 0);
+  .section-title {
+    text-align: left !important;
+  }
   .shape-5 {
     position: absolute;
     bottom: 8%;
@@ -87,17 +90,12 @@
     }
   }
 }
-@include respond-below(largest) {
-  .section-software-intergrations {
-    .software-intergrations-content {
-      .section-title {
-        text-align: left;
-      }
-    }
-  }
-}
+
 @include respond-below(wide) {
   .section-software-intergrations {
+    .section-title {
+      text-align: center !important;
+    }
     .shape-5 {
       display: none;
     }
