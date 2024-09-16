@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-main{
+    width: 100%;
+}
+.setion-pseudo-class{
+    padding: 10px;
+    background-color: rgb(102, 215, 219);
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-submit{
+    width: 80%;
+    height: auto;
+    background-color: rgb(156, 175, 124);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}
+.form-title{
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+
+}
+.lb-name{
+    display: inline-block;
+    width: 150px;
+    color: rgb(45, 0, 128);
+    font-size: 16px;
+    margin-left: 200px;
+}
+input[type="text"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+input[type="text"]:hover{
+    background-color: burlywood;
+}
+input[type="text"]:active{
+    background-color: cornflowerblue;
+}
+
+input[type="password"]{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+input[type="password"]:hover{
+    color: darkblue;
+    background-color: burlywood;;
+}
+input[type="password"]:active{
+    background-color: cornflowerblue;
+}
+button[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(145, 241, 48);
+    color: black;
+}
+button[type="submit"]:hover{
+    background-color: rgb(245, 208, 116);
+    border-radius: 5px;
+    color: blue;
+}
+
+button[type="submit"]:active{
+    background-color: darkturquoise;
+}
+
+.css-task-list{
+    width: 80%;
+    height: auto;
+    background-color: rgb(155, 213, 228);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}    
+.css-task-list .css-task-iterm{
+        margin-left: 200px;
+}
+
+.css-task-list .css-task-iterm  a{
+    text-decoration: none;
+}
+.css-task-list .css-task-iterm  a:link{
+    color: rgb(132, 59, 214);
+}
+.css-task-list .css-task-iterm  a:hover{
+    color: rgb(241, 238, 15);
+}
+.css-task-list .css-task-iterm  a:active{
+    color: blue;
+}
+.css-task-list .css-task-iterm  a:visited{
+    color: chocolate;
+}
+
+.content{
+    width: 80%;
+    height: auto;
+    background-color: rgb(241, 240, 154);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}
+.tour-blog{
+    width: 100%;
+    padding-top: 20px;
+}
+.tour-blog:nth-child(2n){
+    background-color: rgb(250, 206, 190);
+}
+.tour-blog:first-child{
+    color: darkblue;
+}
+.tour-blog:last-child{
+    color: darkmagenta;
+}
+.tour-blog p:last-child{
+    color: red;
+}
+.tour-blog h4:first-child{
+    color: rgb(94, 62, 15);
+}
+
+

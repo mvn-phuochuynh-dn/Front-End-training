@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-main{
+    width: 100%;
+    color: aquamarine;
+}
+.setion-basic-selector{
+    padding: 10px;
+    background-color: rgb(102, 215, 219);
+    font-family: 'Times New Roman', Times, serif;
+}
+.class-selector{
+    color: darkblue;
+}
+.form-submit{
+    width: 80%;
+    height: auto;
+    background-color: rgb(156, 175, 124);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}
+.form-title{
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px;
+
+}
+.lb-name{
+    display: inline-block;
+    width: 150px;
+    color: rgb(45, 0, 128);
+    font-size: 16px;
+    margin-left: 200px;
+}
+.inp_all-page{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 13px;
+    border: 1px solid rgb(44, 44, 44);
+}
+
+.btn-primary{
+    width: 100px;
+    height: 30px;
+    border: 1px solid blue;
+    font-size: 16px;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#id-selector{
+    width: 80%;
+    height: auto;
+    background-color: rgb(177, 212, 141);
+    margin: auto;
+    padding-bottom: 20px;
+}
+#div-title{
+    font-size: 16px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+#lb-job-role{
+    color: black;
+    font-size: 16px;
+    padding-left: 100px;
+}
+#selectJobRole{
+    height: 30px;
+    width: 200px;
+    background-color: rgb(179, 193, 219);
+}
+#lb-interests{
+    display: block;
+    color: black;
+    font-size: 16px;
+    padding-left: 100px;
+}
+#cb-interests{
+    color: black;
+    padding-left: 100px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.section-child-selector{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-child-selector .section-content{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(179, 199, 241);
+}
+.section-child-selector .section-content >.section-title{
+    font-size: 20px;
+    color: rgb(68, 62, 4);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.section-child-selector .section-content .content{
+    color: rgb(54, 12, 59);
+    padding: 20px
+}
+.section-child-selector .section-content .img-3-col{
+    width: 500px;
+    height: auto;
+    padding-left: 100px;
+}
+.section-child-selector .section-content .cost{
+    color:black;
+    padding: 20px;
+}
+.section-child-selector .section-content .time-post{
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}

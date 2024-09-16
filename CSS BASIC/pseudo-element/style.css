@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-main{
+    width: 100%;
+}
+.setion-pseudo-element{
+    padding: 10px;
+    background-color: rgb(102, 215, 219);
+    font-family: 'Times New Roman', Times, serif;
+}
+.content{
+    width: 80%;
+    height: auto;
+    background-color: rgb(241, 240, 154);
+    border: 1px solid rgb(29, 29, 29);
+    margin: auto;
+}
+.content-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+.tour-blog{
+    width: 100%;
+    padding-top: 20px;
+}
+.acticle-title{
+    color: rgb(172, 50, 29);
+}
+.tour-info{
+    margin: 10px;
+    background-color: rgb(248, 205, 248);
+}
+.tour-info::before{
+    content: "Giới thiệu";
+    padding-left: 20px;
+}
+.blog-content{
+    padding-left: 20px;
+}
+
+.blog-content::first-line{
+    color: rgb(12, 109, 20);
+    text-transform: uppercase;
+}
+.blog-content::first-letter{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(180, 46, 46);
+}
+.tour-price::before{
+    content: "Chi phí:";
+    padding: 20px;
+}
+.tour-price::after{
+    content: " VNĐ ";
+}
