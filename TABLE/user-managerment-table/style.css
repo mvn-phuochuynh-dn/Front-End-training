@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(195, 211, 240);
+    padding-top: 15px;
+}
+.btnHeader1{
+    margin-left: 60%;
+    height: 40px;
+    width: 150px;
+    border-color: rgb(181, 209, 79);
+    border-radius: 7%;
+    color: rgb(181, 209, 79);
+    padding: 10px;
+}
+.btnHeader2{
+    height: 40px;
+    width: 150px;
+    color: white;
+    border-radius: 7%;
+    background-color: blue;
+    padding: 10px;
+    
+}
+main{
+    width: 100%;
+    border: 1px solid black
+}
+
+section{
+    margin: 30px;
+}
+.lbSearch{
+    margin-left: 70%;
+}
+.inpSearch{
+    width: 100%;
+    height: 30px;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+select{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+th{
+    background-color: rgb(186, 204, 238);
+}
+
+
+.btnAvb{
+    background-color: chartreuse;
+}
+.btnStk{
+    background-color: rgb(39, 64, 206);
+}
+.btnEdit{
+    background-color: darkcyan;
+}
+.btnDel{
+    background-color: darkgoldenrod;
+}
+.lbSearch{
+    margin-left: 70%;
+}
+.inpShow{
+    width: auto;
+}

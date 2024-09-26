@@ -1,0 +1,41 @@
+main{
+    width: 100%;
+    border: 1px solid black
+}
+h2{
+    width: auto;
+    height: 50px;
+    background-color: rgb(219, 241, 241);
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+section{
+    margin: 30px;
+}
+.lbSearch{
+    margin-left: 70%;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.btnAvb{
+    background-color: chartreuse;
+}
+.btnStk{
+    background-color: rgb(39, 64, 206);
+}
+.btnEdit{
+    background-color: darkcyan;
+}
+.btnDel{
+    background-color: darkgoldenrod;
+}

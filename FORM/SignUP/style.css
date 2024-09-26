@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin: 10px auto; 
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    background-color: rgb(223, 232, 247)
+}
+.title{
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center
+}
+h2{
+    display: inline-block;
+    background-color: #76c5d0;
+    padding: 10px 20px;
+    border-radius: 100%;
+}
+h3{
+    display: inline;
+}
+.inp_name_email_password{
+    height: 30px; 
+    width: 90%;
+    margin: 10px;
+}
+.age{
+    margin: 10px;
+}
+textarea{
+    width: 90%; 
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select{
+    margin: 10px; 
+    height: 30px; 
+    width: 90%;
+}
+optgroup{
+    background-color: rgb(208, 223, 236);
+}
+.cbInterests{
+    margin: 10px;
+}
+button{
+    background-color: #49c349;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px; 
+    margin: 10px;
+}
+
