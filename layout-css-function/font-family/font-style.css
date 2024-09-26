@@ -1,0 +1,19 @@
+﻿@font-face {
+    font-family: "Sansation Light";
+    src: url("./Sansation-Light/Sansation_Light.eot") format("eot"),
+    url("./Sansation-Light/Sansation_Light.woff") format("woff"),
+    url("./Sansation-Light/Sansation_Light.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("./roboto/Roboto-Black.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("./roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf") format("truetype"),
+    url("./roboto-mono/RobotoMono-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+}
